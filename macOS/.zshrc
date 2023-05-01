@@ -1,8 +1,11 @@
 # Reconstructing my .zshrc file after I deleted it by accident. ... oops.
 # 2023-04-29: Adding basic environmental variables & zsh utilities
+# 2023-04-30: Tweaks to prompts
 
 export EDITOR=nvim
 export HOMEBREW_INSTALL_BADGE='☕'
+export RPROMPT='%F{green}%h%f | %F{magenta}%T%f'
+export PROMPT='%F{blue}%~>%f'
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

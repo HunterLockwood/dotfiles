@@ -1,12 +1,10 @@
 # Hunter's Alacritty Config
-# 2023-04-27: Initial configuration: A basic window  with a little padding
-# 2023-04-28: Tinkering
-# 2023-04-28: Holy crap I'm using (neo)vim
-# 2023-04-29: Trying to fix up cursor issues/consistency
-# 2023-04-30: Changing over to import statements
+# 2023-04-27: Initial configuration, before setting up nvim 
+# 2023-04-30: Post-nvim: Changing over to import statements for pseudo-theme-switching
+
 import:
   - ~/.config/alacritty/everforest_dark_soft.yml
- #  - ~/.config/alacritty/everforest_light_medium.yml
+ # - ~/.config/alacritty/everforest_light_medium.yml
 
 window:
   padding:
@@ -31,7 +29,7 @@ font:
     style: Demi Bold
   bold_italic:
     style: Demi Bold Italic
-  size: 18
+  size: 16
  
  # Miscellanea
 cursor:

@@ -1,0 +1,39 @@
+# !/usr/bin/env sh
+# first draft 2023-05-01
+
+# overall layout, global settings, pretty colors
+
+yabai -m config \
+    focus_follows_mouse autoraise \
+    window_origin_display cursor  \
+    window_border_width 83 \
+    active_window_border_color 0xffeaedc8 \
+    normal_window_border_color 0xff829181 \
+    window_border_radius 12 \
+    window_border_blur on \
+    auto_balance off \
+    split_ratio 0.667 \
+    window_gap 08 \
+    layout bsp 
+
+yabai -m space 1 --label Free
+yabai -m config --space Free layout float
+
+yabai -m space 2 --label Main
+# yabai -m config --space Main 
+
+yabai -m space 3 --label Read
+# yabai -m config --space Read 
+ 
+ 
+# send things places
+yabai -m rule --add app="Microsoft (Word|Outlook)" space=Free
+yabai -m rule --add app="Messages" space=Free
+yabai -m config external_bar all:32:0
+
+# fancy? requires disable SIP
+#yabai -m config window_shadow float
+#yabai -m config window_topmost on
+#yabai -m config normal_window_opacity 0.8787878
+
+echo "yabai reached the end of the shell script."

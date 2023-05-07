@@ -1,12 +1,24 @@
 # Reconstructing my .zshrc file after I deleted it by accident. ... oops.
 # 2023-04-29: Adding basic environmental variables & zsh utilities
 # 2023-04-30: Tweaks to prompts
+# 2023-05-07: Changes based on settuping up Arch (btw) on the home pc.
 
 export EDITOR=nvim
 export HOMEBREW_INSTALL_BADGE='☕'
 export RPROMPT='%F{green}%h%f | %F{magenta}%T%f'
 export PROMPT='%F{blue}%~>%f'
 
+# History
+HISTSIZE=1000000
+SAVEHIST=1000000
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt SHARE_HISTORY
+
+# Other basic options
+setopt AUTO_CD
+setopt NOTIFY
+
+# Plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
@@ -25,3 +37,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# Common aliases cobbled from old reddit posts and github repos
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias la='ls -AFGhloyu'

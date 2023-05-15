@@ -1,5 +1,6 @@
 ########################
 #First Draft 2023-05-02#
+#Edits 05-14 as I learn#
 ########################
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
@@ -30,7 +31,7 @@ sketchybar --add item clock center                             \
            --set clock   update_freq=10                        \
                          script="$PLUGIN_DIR/clock.sh"         \
                                                                \
-           --add item wifi left                                \
+           --add item wifi right                               \
            --set wifi    script="$PLUGIN_DIR/wifi.sh"          \
                          icon=􀷖                                \
            --subscribe wifi wifi_change                        \
@@ -42,7 +43,13 @@ sketchybar --add item clock center                             \
            --add item battery right                            \
            --set battery script="$PLUGIN_DIR/battery.sh"       \
                          update_freq=120                       \
-           --subscribe battery system_woke power_source_change
+           --subscribe battery system_woke power_source_change \
+                                                               \
+           --add item front_app left                           \
+           --set front_app script="$PLUGIN_DIR/front_app.sh"   \
+                         icon.drawing==off                     \
+           --subscribe front_app_switched                      \
+
 
 sketchybar --bar topmost=on
 ##### Finalizing Setup #####

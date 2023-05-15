@@ -43,3 +43,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias la='ls -AFGhloyu'
+
+# Trying to add custom user path
+export PATH="${HOME}/bin:${PATH}"

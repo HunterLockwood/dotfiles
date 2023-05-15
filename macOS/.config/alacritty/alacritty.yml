@@ -3,8 +3,8 @@
 # 2023-04-30: Post-nvim: Changing over to import statements for pseudo-theme-switching
 
 import:
-  - ~/.config/alacritty/everforest_dark_soft.yml
- # - ~/.config/alacritty/everforest_light_medium.yml
+ # - ~/.config/alacritty/everforest_dark_soft.yml
+  - ~/.config/alacritty/everforest_light_medium.yml
 
 window:
   padding:

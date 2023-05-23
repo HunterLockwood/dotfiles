@@ -17,7 +17,7 @@ yabai -m config \
     layout bsp 
 
 yabai -m space 1 --label Free
-yabai -m config --space Free layout float
+# yabai -m config --space Free layout float
 
 yabai -m space 2 --label Main
 # yabai -m config --space Main 

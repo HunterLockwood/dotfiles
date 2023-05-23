@@ -1,7 +1,6 @@
 ########################
 #First Draft 2023-05-02#
 #Edits 05-14 as I learn#
-#Catppuccin 05-22      #
 ########################
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
@@ -12,13 +11,13 @@ sketchybar --bar height=32        \
                  sticky=off       \
                  padding_left=10  \
                  padding_right=10 \
-                 color=0xff24273a \
+                 color=0xff333c43 \
 
 
 sketchybar --default icon.font="SF Compact Display:Ultralight:18.0"  \
-                     icon.color=0xffa6da95                 \
+                     icon.color=0xffe69875                 \
                      label.font="Brandon Grotesque:Medium:16.0" \
-                     label.color=0xffcad3f5                \
+                     label.color=0xffd3c6aa                \
                      padding_left=5                        \
                      padding_right=5                       \
                      label.padding_left=4                  \

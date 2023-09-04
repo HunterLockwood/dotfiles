@@ -1,0 +1,63 @@
+########################
+#First Draft 2023-05-02#
+#Edits 05-14 as I learn#
+#Catppuccin 05-22      #
+#Light Mode 2023-08-30 #
+#Macchiato bar: 24273a #
+#Macchiato ico: eed49f #
+#Macchiato fnt: a6da95 #
+########################
+
+PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
+
+sketchybar --bar height=32        \
+                 blur_radius=30   \
+                 position=top     \
+                 sticky=off       \
+                 padding_left=10  \
+                 padding_right=10 \
+                 color=0xffeff1f5 \
+
+sketchybar --default icon.font="SF Compact Display:Ultralight:18.0"  \
+                     icon.color=0xff8839ef                 \
+                     label.font="Botanika Mono:Italic:16.0" \
+                     label.color=0xff4c4f69                \
+                     padding_left=5                        \
+                     padding_right=5                       \
+                     label.padding_left=4                  \
+                     label.padding_right=4                 \
+                     icon.padding_left=4                   \
+                     icon.padding_right=4
+
+
+
+sketchybar --add item clock center                             \
+           --set clock   update_freq=10                        \
+                         script="$PLUGIN_DIR/clock.sh"         \
+                                                               \
+           --add item wifi right                               \
+           --set wifi    script="$PLUGIN_DIR/wifi.sh"          \
+                         icon=􀷖                                \
+           --subscribe wifi wifi_change                        \
+                                                               \
+           --add item volume right                             \
+           --set volume  script="$PLUGIN_DIR/volume.sh"        \
+           --subscribe volume volume_change                    \
+                                                               \
+           --add item battery right                            \
+           --set battery script="$PLUGIN_DIR/battery.sh"       \
+                         update_freq=120                       \
+           --subscribe battery system_woke power_source_change \
+                                                               \
+           --add item front_app left                           \
+           --set front_app script="$PLUGIN_DIR/front_app.sh"   \
+                         icon.drawing==off                     \
+           --subscribe front_app front_app_switched            \
+
+
+sketchybar --bar topmost=on
+##### Finalizing Setup #####
+# The below command is only needed at the end of the initial configuration to
+# force all scripts to run the first time, it should never be run in an item script.
+
+sketchybar --update

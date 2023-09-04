@@ -4,3 +4,7 @@
 Initialized 2023-04-29 after losing my `.zshrc` file with no backup.
 
 Adjusted over time as I live and learn.
+
+# 2023-09-04
+- Snap back to Alacritty
+- Catppuccin

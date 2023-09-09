@@ -1,8 +1,7 @@
 --[[
 Dr. Hunter Thompson Lockwood's Neovim Configuration
 2023-04-30: Initalized from nvim-lua/kickstart.nvim
-2023-05-03: Major adjustments
-2023-08-29: Latte mode
+2023-05-03: Major adjustments 
 --]]
 
 -- Set <space> as the leader key
@@ -56,10 +55,7 @@ require('lazy').setup({
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim',
-        tag = "legacy",
-        event = "LspAttach",
-        opts = {} },
+      { 'j-hui/fidget.nvim', opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
@@ -87,20 +83,17 @@ require('lazy').setup({
     },
   },
 
-    {
-      "catppuccin/nvim",
-      lazy = true,
-      name = "catppuccin",
-    },
+  { 'catpuccin/nvim', name = 'catpuccin' },
 
   { -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
     opts = {
       options = {
-        theme = 'catppuccin',
-        component_separators = '┊',
-        section_separators = '󰥛',
+        icons_enabled = false,
+        theme = 'auto',
+        component_separators = '|',
+        section_separators = '',
       },
     },
   },
@@ -467,6 +460,5 @@ cmp.setup {
   },
 }
 
-vim.cmd.colorscheme "catppuccin-latte"
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

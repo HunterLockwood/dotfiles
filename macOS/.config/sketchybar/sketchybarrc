@@ -6,6 +6,7 @@
 #Macchiato bar: 24273a #
 #Macchiato ico: eed49f #
 #Macchiato fnt: a6da95 #
+#Weather 2023-09-14    #
 ########################
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
@@ -18,16 +19,16 @@ sketchybar --bar height=32        \
                  padding_right=10 \
                  color=0xffeff1f5 \
 
-sketchybar --default icon.font="SF Compact Display:Ultralight:18.0"  \
+sketchybar --default icon.font="SF Compact Display:Light:18.0"  \
                      icon.color=0xff8839ef                 \
-                     label.font="Botanika Mono:Italic:16.0" \
-                     label.color=0xff4c4f69                \
-                     padding_left=5                        \
-                     padding_right=5                       \
-                     label.padding_left=4                  \
-                     label.padding_right=4                 \
-                     icon.padding_left=4                   \
-                     icon.padding_right=4
+                     label.font="Spot Mono:Regular:18.0" \
+                     label.color=0xff7c7f93                \
+                     padding_left=2                        \
+                     padding_right=2                       \
+                     label.padding_left=2                  \
+                     label.padding_right=2                 \
+                     icon.padding_left=2                   \
+                     icon.padding_right=2
 
 
 
@@ -36,7 +37,7 @@ sketchybar --add item clock center                             \
                          script="$PLUGIN_DIR/clock.sh"         \
                                                                \
            --add item wifi right                               \
-           --set wifi    script="$PLUGIN_DIR/wifi.sh"          \
+           --set wifi script="$PLUGIN_DIR/wifi.sh"             \
                          icon=􀷖                                \
            --subscribe wifi wifi_change                        \
                                                                \
@@ -53,6 +54,10 @@ sketchybar --add item clock center                             \
            --set front_app script="$PLUGIN_DIR/front_app.sh"   \
                          icon.drawing==off                     \
            --subscribe front_app front_app_switched            \
+                                                               \
+           --add item weather center                             \
+           --set weather script="$PLUGIN_DIR/weather.sh"      \
+                         update_freq=1200                      \
 
 
 sketchybar --bar topmost=on

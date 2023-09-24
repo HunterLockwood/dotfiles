@@ -1,5 +1,6 @@
 # 2023-09-16 Testing out helix after getting annoyed fussing with lua again
 theme = "catppuccin_latte"
+#theme = "catppuccin_macchiato"
 
 [editor]
 scroll-lines = 1

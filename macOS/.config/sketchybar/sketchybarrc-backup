@@ -1,57 +1,36 @@
 ########################
 #First Draft 2023-05-02#
-#Edits & learning 05-14#
-#Catppuccin       05-22#
-#Light Mode       08-30#
-#Weather          09-14#
-#Modularizing: 1  09-21#
+#Edits 05-14 as I learn#
+#Catppuccin 05-22      #
+#Light Mode 2023-08-30 #
+#Macchiato bar: 24273a #
+#Macchiato ico: eed49f #
+#Macchiato fnt: a6da95 #
+#Weather 2023-09-14    #
 ########################
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
-### uncomment for eye-easy dark mode mauve catppuccin ###
-COLOR_BAR=0xff24273a   # catppuccin-macchiato  base
-COLOR_ICON=0xffc6a0f6  # catppuccin-macchiato  mauve
-COLOR_FONT=0xff939ab7  # catppuccin-macchiato  overlay2
+sketchybar --bar height=32        \
+                 blur_radius=30   \
+                 position=top     \
+                 sticky=off       \
+                 padding_left=10  \
+                 padding_right=10 \
+                 color=0xffeff1f5 \
 
-### uncomment for subtle mauvey light mode catppuccin ###
-#COLOR_BAR=0xffeff1f5  # catppuccin-latte      base
-#COLOR_ICON=0xff8839ef # catppuccin-latte      mauve
-#COLOR_FONT=0xff7c7f93 # catpuccin-latte       overlay2
+sketchybar --default icon.font="SF Compact Display:Light:18.0"  \
+                     icon.color=0xff8839ef                 \
+                     label.font="Spot Mono:Regular:18.0" \
+                     label.color=0xff7c7f93                \
+                     padding_left=2                        \
+                     padding_right=2                       \
+                     label.padding_left=2                  \
+                     label.padding_right=2                 \
+                     icon.padding_left=2                   \
+                     icon.padding_right=2
 
-### font for labels "name: style: size"               ###
-LABEL_FONT="Spot Mono: Regular:18.0"
 
-### not far from the default bar settings             ###
-bar=(
-  height=30
-  blur_radius=30
-  position=top
-  topmost=on
-  sticky=off
-  padding_left=4
-  padding_right=4
-  color=$COLOR_BAR
-)
-
-### spacing & fonts for items                         ###
-defaults=(
-  icon.font="SF Compact Display:Light:18.0"
-  icon.color=$COLOR_ICON
-  label.font="$LABEL_FONT"
-  label.color=$COLOR_FONT
-  label.padding_left=2
-  icon.padding_left=2
-  label.padding_right=2
-  icon.padding_right=2
-)
-
-### read the options above and pass them to sketchybar###
-sketchybar --bar "${bar[@]}"
-sketchybar --default "${defaults[@]}"
-
-###   other bash scripts for minimal functionality    ###
-            ### TODO clean this up also ###
 
 sketchybar --add item clock center                             \
            --set clock   update_freq=10                        \
@@ -81,6 +60,7 @@ sketchybar --add item clock center                             \
                          update_freq=1800                      \
 
 
+sketchybar --bar topmost=on
 ##### Finalizing Setup #####
 # The below command is only needed at the end of the initial configuration to
 # force all scripts to run the first time, it should never be run in an item script.

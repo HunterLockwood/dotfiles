@@ -76,21 +76,7 @@ source /opt/homebrew/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting
 # Basic custom path, manpath stuff 
 export PATH="${HOME}/bin:${PATH}"
 export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/hunterlockwood/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/hunterlockwood/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/hunterlockwood/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/hunterlockwood/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+export PATH="/opt/homebrew/bin/python3:$PATH"
 
 # Common aliases cobbled from old reddit posts and github repos
 alias ..='cd ..'
@@ -101,7 +87,10 @@ alias la='ls -AFGhloyu'
 alias lsd='ls -lGd */'
 alias sudo='sudo '
 alias weather='curl -s "wttr.in/{Springdale,Oxford},%20Ohio?m&format=4"'
-alias {lightmode,darkmode}="hx ~/.zshrc ~/.config/alacritty/alacritty.yml ~/.config/sketchybar/sketchybarrc ~/.config/helix/config.toml"
+alias {lightmode,darkmode}="hx ~/.zshrc ~/.config/alacritty/alacritty.yml ~/.config/sketchybar/sketchybarrc ~/.config/helix/config.toml ~/.config/bat/config"
+alias pip='pip3'
+alias python='python3'
+alias password='LC_ALL=C tr -dc "[:alnum:]" < /dev/urandom | head -c 20 | pbcopy'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

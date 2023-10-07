@@ -1,0 +1,23 @@
+theme = "Catppuccin-latte"
+# this is my client_id for "LocalSpotty"
+client_id = "ce473796b9e44f43a512d9a2cfcbde51"
+client_port = 8080
+default_device ="spotify-player"
+play_icon = ""
+pause_icon = ""
+liked_icon = "󰄛"
+border_type= "Rounded"
+progress_bar_type = "Line"
+
+[device]
+name = "spotify-player"
+device_type = "computer"
+volume = 90
+bitrate = 320
+normalization = true
+
+#[device]
+#name = "The Green Speaker"
+#device_type = "speaker"
+#volume = "65"
+#bitrate = "320"

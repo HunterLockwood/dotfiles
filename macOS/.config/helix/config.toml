@@ -22,7 +22,7 @@ character = ""
 skip-levels = 1
 
 [editor.statusline]
-# miveon (reverse neovim)
+# mivoen (reverse neovim)
 left = ["position", "selections", "diagnostics"]
 center = ["file-name", "file-modification-indicator", "version-control", "spacer", "file-encoding"]
 right = ["mode", "spinner"]

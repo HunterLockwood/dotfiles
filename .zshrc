@@ -5,6 +5,7 @@
 # 2023-09-05: Learned about dirstack and fixing history
 # 2023-09-08: Remembering I installed things like fd
 # 2023-09-23: Switching to helix, darkmode/lightmode aliases
+# 2023-11-30: Email at the command line in 2023
 
 ##### Dark Mode / Light Mode #####
 ####   Command-line changes   ####
@@ -31,15 +32,15 @@ export FZF_DEFAULT_OPTS=" \
 
 ## fzf catppuccin: macchiato first, latte second
 
-#export FZF_DEFAULT_OPTS=" \
-#--color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
-#--color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
-#--color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
-
 export FZF_DEFAULT_OPTS=" \
---color=bg+:#ccd0da,bg:#eff1f5,spinner:#dc8a78,hl:#d20f39 \
---color=fg:#4c4f69,header:#d20f39,info:#8839ef,pointer:#dc8a78 \
---color=marker:#dc8a78,fg+:#4c4f69,prompt:#8839ef,hl+:#d20f39"
+--color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
+--color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
+--color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
+
+#export FZF_DEFAULT_OPTS=" \
+#--color=bg+:#ccd0da,bg:#eff1f5,spinner:#dc8a78,hl:#d20f39 \
+#--color=fg:#4c4f69,header:#d20f39,info:#8839ef,pointer:#dc8a78 \
+#--color=marker:#dc8a78,fg+:#4c4f69,prompt:#8839ef,hl+:#d20f39"
 
 
 fh() {
@@ -73,7 +74,7 @@ setopt NOTIFY                   # notify when jobs finish
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
-# Basic custom path, manpath stuff 
+# Basic custom path stuff 
 export PATH="${HOME}/bin:${PATH}"
 export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
 export PATH="/opt/homebrew/bin/python3:$PATH"
@@ -86,11 +87,24 @@ alias l='ls'
 alias la='ls -AFGhloyu'
 alias lsd='ls -lGd */'
 alias sudo='sudo '
+alias weather-forecast='curl -s "wttr.in/{Springdale,Oxford},%20Ohio?1mFnq"'
 alias weather='curl -s "wttr.in/{Springdale,Oxford},%20Ohio?m&format=4"'
-alias {lightmode,darkmode}="hx ~/.zshrc ~/.config/alacritty/alacritty.yml ~/.config/sketchybar/sketchybarrc ~/.config/helix/config.toml ~/.config/bat/config"
 alias pip='pip3'
 alias python='python3'
 alias password='LC_ALL=C tr -dc "[:alnum:]" < /dev/urandom | head -c 20 | pbcopy'
+
+# Various useful things I've hacked together
+alias {lightmode,darkmode}="hx ~/.zshrc ~/.config/alacritty/alacritty.yml ~/.config/sketchybar/sketchybarrc ~/.config/helix/config.toml ~/.config/bat/config"
+alias email='himalaya --account=personal && himalaya'
+
+cargo_update() {
+    for pkg in $(cargo install --list | awk '/:$/ { print $1; }'); do
+        cargo install $pkg
+    done
+}
+
+
+# Things added by other things
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

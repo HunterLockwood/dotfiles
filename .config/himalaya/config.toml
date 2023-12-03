@@ -1,0 +1,75 @@
+downloads-dir = "~/Downloads"
+email-listing-page-size = 12
+
+[miamioh]
+default = true
+display-name = "Dr. Hunter Thompson Lockwood"
+email = "lockwoht@miamioh.edu"
+signature = "~/.signature-miamioh"
+
+backend = "imap"
+imap-host = "imap.gmail.com"
+imap-port = 993
+imap-login = "lockwoht@miamioh.edu"
+imap-auth = "oauth2"
+imap-oauth2-client-id = "737930562745-2dtp5o1gtct0c1h1oieig10ktn37b0hp.apps.googleusercontent.com"
+imap-oauth2-auth-url = "https://accounts.google.com/o/oauth2/v2/auth"
+imap-oauth2-token-url = "https://www.googleapis.com/oauth2/v3/token"
+imap-oauth2-pkce = true
+imap-oauth2-scope = "https://mail.google.com/"
+
+sender = "smtp"
+smtp-host = "smtp.gmail.com"
+smtp-port = 465
+smtp-login = "lockwoht@miamioh.edu"
+smtp-auth = "oauth2"
+smtp-oauth2-client-id = "737930562745-uve26b6qvpgjca3f08t10706sol26mgp.apps.googleusercontent.com"
+smtp-oauth2-auth-url = "https://accounts.google.com/o/oauth2/v2/auth"
+smtp-oauth2-token-url = "https://www.googleapis.com/oauth2/v3/token"
+smtp-oauth2-pkce = true
+smtp-oauth2-scope = "https://mail.google.com/"
+
+
+[miamioh.folder-aliases]
+inbox = "INBOX"
+sent = "[Gmail]/Sent Mail"
+drafts = "[Gmail]/Drafts"
+trash = "[Gmail]/Trash"
+
+[personal]
+default = false
+display-name = "Hunter Thompson Lockwood"
+email = "hunterlockwood@gmail.com"
+signature = "~/.signature"
+
+backend = "imap"
+imap-host = "imap.gmail.com"
+imap-port = 993
+imap-login = "hunterlockwood@gmail.com"
+imap-auth = "oauth2"
+imap-oauth2-client-id = "420531855043-lh5nmqrluanddo0m4659tof0ios7khcq.apps.googleusercontent.com"
+imap-oauth2-auth-url = "https://accounts.google.com/o/oauth2/v2/auth"
+imap-oauth2-token-url = "https://www.googleapis.com/oauth2/v3/token"
+imap-oauth2-pkce = true
+imap-oauth2-scope = "https://mail.google.com/"
+
+sender = "smtp"
+smtp-host = "smtp.gmail.com"
+smtp-port = 465
+smtp-login = "hunterlockwood@gmail.com"
+smtp-auth = "oauth2"
+smtp-oauth2-auth-url = "https://accounts.google.com/o/oauth2/v2/auth"
+smtp-oauth2-token-url = "https://www.googleapis.com/oauth2/v3/token"
+smtp-oauth2-pkce = true
+smtp-oauth2-scope = "https://mail.google.com/"
+
+smtp-oauth2-client-id = "420531855043-lh5nmqrluanddo0m4659tof0ios7khcq.apps.googleusercontent.com"
+smtp-oauth2-client-secret = { keyring = "gmail-imap-oauth2-client-secret" }
+smtp-oauth2-access-token = { keyring = "gmail-imap-oauth2-access-token" }
+smtp-oauth2-refresh-token = { keyring = "gmail-imap-oauth2-refresh-token" }
+
+[personal.folder-aliases]
+inbox = "INBOX"
+sent = "[Gmail]/Sent Mail"
+drafts = "[Gmail]/Drafts"
+trash = "[Gmail]/Trash"

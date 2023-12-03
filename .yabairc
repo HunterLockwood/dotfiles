@@ -1,5 +1,6 @@
 # !/usr/bin/env sh
-# first draft 2023-05-01
+# first draft 2023-05-01 just figuring things out
+# second draft 2023-10-07 cleanup and play
 
 # overall layout, global settings, pretty colors
 
@@ -27,7 +28,6 @@ yabai -m space 3 --label Read
  
  
 # send things places
-yabai -m rule --add app="Microsoft (Word|Outlook)" space=Free
 yabai -m rule --add app="Messages" space=Free
 yabai -m config external_bar all:32:0
 

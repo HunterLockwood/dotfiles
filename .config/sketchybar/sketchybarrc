@@ -5,19 +5,20 @@
 #Light Mode       08-30#
 #Weather          09-14#
 #Modularizing: 1  09-21#
+#Removing wifi :( 11-10#
 ########################
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
 ### uncomment for eye-easy dark mode mauve catppuccin ###
-#COLOR_BAR=0xff24273a   # catppuccin-macchiato  base
-#COLOR_ICON=0xffc6a0f6  # catppuccin-macchiato  mauve
-#COLOR_FONT=0xff939ab7  # catppuccin-macchiato  overlay2
+COLOR_BAR=0xff24273a   # catppuccin-macchiato  base
+COLOR_ICON=0xffc6a0f6  # catppuccin-macchiato  mauve
+COLOR_FONT=0xff939ab7  # catppuccin-macchiato  overlay2
 
 ### uncomment for subtle mauvey light mode catppuccin ###
-COLOR_BAR=0xffeff1f5  # catppuccin-latte        base
-COLOR_ICON=0xff8839ef # catppuccin-latte        mauve
-COLOR_FONT=0xff7c7f93 # catpuccin-latte         overlay2
+#COLOR_BAR=0xffeff1f5  # catppuccin-latte        base
+#COLOR_ICON=0xff8839ef # catppuccin-latte        mauve
+#COLOR_FONT=0xff7c7f93 # catpuccin-latte         overlay2
 
 ### font for labels "name: style: size"               ###
 LABEL_FONT="FantasqueSansM Nerd Font Mono"

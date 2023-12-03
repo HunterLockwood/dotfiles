@@ -95,7 +95,8 @@ alias password='LC_ALL=C tr -dc "[:alnum:]" < /dev/urandom | head -c 20 | pbcopy
 
 # Various useful things I've hacked together
 alias {lightmode,darkmode}="hx ~/.zshrc ~/.config/alacritty/alacritty.yml ~/.config/sketchybar/sketchybarrc ~/.config/helix/config.toml ~/.config/bat/config"
-alias email='himalaya --account=personal && himalaya'
+alias emx='himalaya --account=personal && himalaya'
+alias email='himalaya'
 
 cargo_update() {
     for pkg in $(cargo install --list | awk '/:$/ { print $1; }'); do

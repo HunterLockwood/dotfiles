@@ -18,5 +18,5 @@ WORKMAIL=$(himalaya --output json search RECENT | jq -r '.|length')
 if [ "$WORKMAIL" -gt 0 ]; then
     sketchybar --set $NAME label="📥"
 else
-    sketchybar --set $NAME label=" "
+    sketchybar --set $NAME label="😎"
 fi

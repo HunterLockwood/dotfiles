@@ -30,9 +30,9 @@ smtp-oauth2-token-url = "https://www.googleapis.com/oauth2/v3/token"
 smtp-oauth2-pkce = true
 smtp-oauth2-scope = "https://mail.google.com/"
 
-smtp-oauth2-client-secret = { keyring = "gmail-imap-oauth2-client-secret" }
-smtp-oauth2-access-token = { keyring = "gmail-imap-oauth2-access-token" }
-smtp-oauth2-refresh-token = { keyring = "gmail-imap-oauth2-refresh-token" }
+smtp-oauth2-client-secret = { keyring = "miamioh-imap-oauth2-client-secret" }
+smtp-oauth2-access-token = { keyring = "miamioh-imap-oauth2-access-token" }
+smtp-oauth2-refresh-token = { keyring = "miamioh-imap-oauth2-refresh-token" }
 
 [miamioh.folder-aliases]
 inbox = "INBOX"
@@ -68,9 +68,9 @@ smtp-oauth2-pkce = true
 smtp-oauth2-scope = "https://mail.google.com/"
 
 smtp-oauth2-client-id = "{PERSONAL CLIENT ID}"
-smtp-oauth2-client-secret = { keyring = "gmail-imap-oauth2-client-secret" }
-smtp-oauth2-access-token = { keyring = "gmail-imap-oauth2-access-token" }
-smtp-oauth2-refresh-token = { keyring = "gmail-imap-oauth2-refresh-token" }
+smtp-oauth2-client-secret = { keyring = "personal-imap-oauth2-client-secret" }
+smtp-oauth2-access-token = { keyring = "personal-imap-oauth2-access-token" }
+smtp-oauth2-refresh-token = { keyring = "personal-imap-oauth2-refresh-token" }
 
 [personal.folder-aliases]
 inbox = "INBOX"

@@ -6,6 +6,7 @@
 #Weather          09-14#
 #Modularizing: 1  09-21#
 #Removing wifi :( 11-10#
+#added mail test  12-04#
 ########################
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
@@ -75,6 +76,10 @@ sketchybar --add item clock center                             \
            --set battery script="$PLUGIN_DIR/battery.sh"       \
                          update_freq=120                       \
            --subscribe battery system_woke power_source_change \
+                                                               \
+           --add item mail center                              \
+           --set mail update_freq=600                          \
+                         script="$PLUGIN_DIR/mail.sh"          \
                                                                \
            --add item front_app left                           \
            --set front_app script="$PLUGIN_DIR/front_app.sh"   \

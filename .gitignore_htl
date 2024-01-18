@@ -1,0 +1,79 @@
+### Generally applicable ignorable things ###
+# Operating Systems that do neither amirite
+.DS_Store
+Thumbs.db
+*.swp
+
+# Typical project emissions & my workflow
+.env
+.env.test
+.env.dev
+*.log
+logs/
+_scratch/
+
+# All your text editors are bad (I use helix btw)
+*.viminfo
+*.vscode
+*.idea
+*.atom
+*.emacs
+*.notepad++
+.editorconfig
+
+### Language-specific elements ###
+# Hunter's Python & the Unholy Venv
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+.tox/
+.coverage
+.cache
+*.egg-info/
+.installed.cfg
+
+# 4Fe + 3O2 + 6H2O → 4Fe(OH)3
+/target
+**/*.rs.bk
+
+# Bell's Bin
+*.elf
+*.out
+
+# ECMA's Emporium of Ephemera
+# (cobbled from various projects I associate with)
+yarn.lock
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
+
+lerna-debug.log*
+
+.eslintcache
+
+.npm
+.npmrc
+npm-debug.log*
+package-lock.json
+node_modules/
+.node_repl_history
+
+jspm_packages/
+
+.vuepress/dist
+.nuxt
+.next
+
+bower_components
+
+typings/
+
+.nyc_output/
+coverage
+*.lcov

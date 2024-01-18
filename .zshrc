@@ -6,6 +6,7 @@
 # 2023-09-08: Remembering I installed things like fd
 # 2023-09-23: Switching to helix, darkmode/lightmode aliases
 # 2023-11-30: Email at the command line in 2023
+# 2023-12-07: Ransacking Oh My Zsh
 
 ##### Dark Mode / Light Mode #####
 ####   Command-line changes   ####
@@ -56,6 +57,7 @@ setopt SHARE_HISTORY            # persist history (persistory)
 setopt HIST_IGNORE_DUPS         # do not record if dup of prior
 setopt APPEND_HISTORY           # append history instead of replace ...
 setopt INC_APPEND_HISTORY       # append history right now seriously
+setopt HIST_IGNORE_SPACE        # sometimes secret things go into commands and you don't want them saved
 
 # Directory stack to navigate
 DIRSTACKSIZE=8
@@ -83,8 +85,12 @@ export PATH="/opt/homebrew/bin/python3:$PATH"
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias cat='bat --paging=never'
 alias l='ls'
+alias ls='ls --color'
 alias la='ls -AFGhloyu'
+alias mkdir='mkdir -pv'
 alias lsd='ls -lGd */'
 alias sudo='sudo '
 alias weather-forecast='curl -s "wttr.in/{Springdale,Oxford},%20Ohio?1mFnq"'
@@ -94,15 +100,37 @@ alias python='python3'
 alias password='LC_ALL=C tr -dc "[:alnum:]" < /dev/urandom | head -c 20 | pbcopy'
 
 # Various useful things I've hacked together
-alias {lightmode,darkmode}="hx ~/.zshrc ~/.config/alacritty/alacritty.yml ~/.config/sketchybar/sketchybarrc ~/.config/helix/config.toml ~/.config/bat/config"
+alias {lightmode,darkmode}="hx ~/.zshrc ~/.config/alacritty/alacritty.toml ~/.config/sketchybar/sketchybarrc ~/.config/helix/config.toml ~/.config/bat/config"
+## going to simplify / overhaul this
+## cf. bat docs? `alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"`
+
+### TODO Prepare for breaking changes
 alias emx='himalaya --account=personal && himalaya'
 alias email='himalaya'
+### TODO The above aliases need to change for 1.0.0 release 
 
 cargo_update() {
     for pkg in $(cargo install --list | awk '/:$/ { print $1; }'); do
         cargo install $pkg
     done
 }
+
+
+# Directly stolen from oh-my-zsh
+alias g='git'
+alias ga='git add'
+alias gaa='git add --all'
+alias gapa='git add --patch'
+alias gau='git add --update'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gcs='git commit -S'
+alias gcl='git clone --recurse-submodules'
+alias gf='git fetch'
+alias gfa='git fetch --all --prune'
+alias gl='git pull'
+alias gp='git push'
+alias gpd='git push --dry-run'
 
 
 # Things added by other things

@@ -1,8 +1,8 @@
 # Hunter's Nushell Environment Config
-#
-# version = "0.88.1"
-# 
-# 2024-01-06 Instantiated
+# 2024-01-06 Instantiated from v0.88.1
+# Registered plugins:
+### formats; query; plot; str_similarity; units
+
 
 def create_left_prompt [] {
     let home =  $nu.home-path
@@ -101,10 +101,14 @@ $env.NU_PLUGIN_DIRS = [
 # obligatory homebrew path entries
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/opt/postgresql@12/bin')
+$env.PATH = ($env.PATH | split row (char esep) | append '~/bin')
 
 # other important environmental variables
 $env.EDITOR = hx
 $env.HOMEBREW_INSTALL_BADGE = "☕☕☕"
+$env.FZF_DEFAULT_COMMAND = "fd --type f --strip-cwd-prefix --hidden --follow --exclude .git"
+$env.FZF_DEFAULT_OPTS = "--reverse --border=double --info=inline --padding=1 --height=12 --prompt=: --pointer=— "
+$env.FZF_DEFAULT_OPTS = "--color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
 
 # use starship
 mkdir ~/.cache/starship

@@ -1,8 +1,54 @@
+# 2024 realization
+# I've mostly cobbled this together myself?
+# Should investigate against latest changes,
+# complete any missing options and organize
+
+# CLINGO / ASP
+[[language]]
+name = "clingo"
+scope = "source.clingo"
+file-types = ["lp"]
+comment-token = "%"
+indent = { tab-width = 2, unit = " " }
+roots = ["*.*"]
+
+# NU
+[language-server.nu-lsp]
+args = ["--lsp"]
+command = "nu"
+
+[[language]]
+comment-token = "#"
+injection-regex = "nu"
+file-types = ["nu"]
+language-servers = [ "nu-lsp" ]
+name = "nu"
+scope = "source.nu"
+shebangs = ["nu"]
+indent = { tab-width = 2, unit = "  " }
+
+# RUST
 [[language]]
 name = "rust"
 [language-server.rust-analyzer.config.check]
 command = "clippy"
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+[language-server.rust-analyzer.config.inlayHints.bindingModeHints]
+enable = false
+[language-server.rust-analyzer.config.inlayHints.closingBraceHints]
+minLines = 10
+[language-server.rust-analyzer.config.inlayHints.closureReturnTypeHints]
+enable = "with_block"
+[language-server.rust-analyzer.config.inlayHints.discriminantHints]
+enable = "fieldless"
+[language-server.rust-analyzer.config.inlayHints.lifetimeElisionHints]
+enable = "skip_trivial"
+[language-server.rust-analyzer.config.inlayHints.typeHints]
+hideClosureInitialization = false
 
+
+# 󰮆SQL󰮆
 [language-server.sql-language-server]
 command = "sql-language-server"
 args = ["up", "--method", "stdio"]
@@ -11,9 +57,30 @@ args = ["up", "--method", "stdio"]
 name = "sql"
 language-servers = [ "sql-language-server" ]
 
-[[language]]
-name = "toml"
-formatter = { command = "taplo", args = ["fmt", "-"] }
+# TEX
+[language-server.texlab]
+command = "texlab"
 
 [language-server.texlab.config.texlab.build]
 onSave = true
+
+# TOML
+[language-server.taplo]
+args = ["lsp", "stdio"]
+command = "taplo"
+
+[[language]]
+comment-token = "#"
+file-types = ["toml", "poetry.lock", "Cargo.lock"]
+formatter = { command = "taplo", args = ["fmt", "-"] }
+indent = { tab-width = 2, unit = "  " }
+injection-regex = "toml"
+language-servers = ["taplo"]
+name = "toml"
+scope = "source.toml"
+
+# YAML
+
+[language-server.yaml-language-server]
+args = ["--stdio"]
+command = "yaml-language-server"

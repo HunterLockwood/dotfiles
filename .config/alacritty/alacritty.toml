@@ -1,0 +1,54 @@
+#import = ["/Users/hunterlockwood.config/alacritty/catppuccin/catppucin-latte.toml"]
+import = ["/Users/hunterlockwood/.config/alacritty/catppuccin/catppuccin-macchiato.toml"]
+live_config_reload = true
+
+[bell]
+animation = "EaseOutExpo"
+duration = 250
+
+[cursor]
+blink_timeout = 0
+thickness = 0.15
+vi_mode_style = "Block"
+
+[cursor.style]
+blinking = "Always"
+shape = "Underline"
+
+[font]
+size = 18
+
+[font.bold]
+style = "Bold"
+
+[font.italic]
+style = "Italic"
+
+[font.normal]
+family = "Monofur Nerd Font Mono"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command|Shift"
+
+[window]
+decorations = "full"
+opacity = 0.889
+option_as_alt = "OnlyLeft"
+resize_increments = true
+title = "eehkwihsenki"
+
+[window.padding]
+x = 2
+y = 2

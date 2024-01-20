@@ -1,7 +1,11 @@
-# Hunter's Nushell Environment Config
-# 2024-01-06 Instantiated from v0.88.1
-# Registered plugins:
+# Hunter's Nushell Environment Config #
+# 2024-01-06 Instantiated from v0.88.1#
+#######################################
+# I have `register`ed the following plugins (in case they get lost or one starts throwing errors)
 ### formats; query; plot; str_similarity; units
+###### (but really only formats, query are essential)
+# I use the following features at compile time (in case I forget during an upgrade)
+### dataframe, extra, plugin
 
 
 def create_left_prompt [] {
@@ -86,14 +90,14 @@ $env.ENV_CONVERSIONS = {
     }
 }
 
-# Directories to search for scripts when calling source or use
-# The default for this is $nu.default-config-dir/scripts
+#
+# Default
+# # # Location
+# # # # # # Scripts & Plugins
 $env.NU_LIB_DIRS = [
     ($nu.default-config-dir | path join 'scripts') # add <nushell-config-dir>/scripts
 ]
 
-# Directories to search for plugin binaries when calling register
-# The default for this is $nu.default-config-dir/plugins
 $env.NU_PLUGIN_DIRS = [
     ($nu.default-config-dir | path join 'plugins') # add <nushell-config-dir>/plugins
 ]

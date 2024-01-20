@@ -1,0 +1,1 @@
+/Users/hunterlockwood/code-learning/languages/nushell/nu_scripts/custom-completions/npm/npm-completions.nu

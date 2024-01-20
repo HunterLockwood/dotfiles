@@ -1,25 +1,27 @@
-# Nushell Config File
-#
-# Instantiated from version 0.88.1
-# 
-# My customizations mostly up here.
+# Nushell Config File              #
+# Instantiated from version 0.88.1 #
+# My customizations mostly up here.#
+####################################
 
 # muscle memory aliases, inherited from other distros
 alias l = ls
 alias la = ls --all
 
+# my custom scripts live in $env.NU_LIB_DIR/scripts
+use ~/.config/nushell/scripts/fetch-wttr.nu weather
+use ~/.config/nushell/scripts/opd_searcher.nu *
+
+# official & semi-official additions
+
 # A simple function that allows keeping macOS `open` by redefining nushell's open as `nuopen`
 def nuopen [arg, --raw (-r)] { if $raw { open -r $arg } else { open $arg } }
 alias open = ^open
 
-# bring in simple custom commands of mine
-use ~/.config/nushell/scripts/fetch-wttr.nu weather
-use ~/.config/nushell/scripts/opd_searcher.nu *
+# a few completions from nushell/nu-scripts are in $env.NU_LIB_DIR/completions
+use ~/.config/nushell/completions *
 
-# For more information on defining custom themes, see
-# https://www.nushell.sh/book/coloring_and_theming.html
-# And here is the theme collection
-# https://github.com/nushell/nu_scripts/tree/main/themes
+####################################
+# this is all from the original config file, with some slight modifications that are mostly overwritten by starship at the end
 let dark_theme = {
     # color for nushell primitives
     separator: white

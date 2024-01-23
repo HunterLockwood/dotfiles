@@ -1,9 +1,12 @@
 # Dr. Hunter Thompson Lockwood's Dotfiles
-## Configuration Information for the work mac.
+## Configuring screens for terminal emulation dreams
 
 Initialized 2023-04-29 after losing my `.zshrc` file with no backup.
 
 Adjusted over time as I live and learn.
+
+# 2024-23-2024
+- Coming to terms with using Windows
 
 # 2024-01-18
 - oh dang i really like nushell

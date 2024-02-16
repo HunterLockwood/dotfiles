@@ -1,0 +1,5233 @@
+ls
+cd `Library/Application Support/nushell/`
+ls --all 
+bat history.txt
+open history.txt
+hx config.nu env.nu --hsplit
+ls
+exit
+man man
+help man
+help help
+help aliases
+exit
+sudo hx /etc/motd
+sudo ^hx /etc/motd
+hx /etc/motd
+^hx /etc/motd
+which hx
+which helix
+which ^helix
+which ^hx
+brew leaves
+^brew leaves
+hx
+^hx
+which nano
+echo ${PATH}
+help echo
+echo $PATH
+echo $env.PATH
+$env
+env
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
+brew
+hx /etc/motd
+sudo hx /etc/motd
+help 
+help config
+config env
+config nu
+$nu.config-path
+cd `Library/Application Support/nushell/`
+la
+l
+ls
+hx config.nu env.nu --vsplit
+config nu
+hx config.nu env.nu --vsplit
+config nu
+hx config.nu
+config env 
+hx config.nu
+hx env.nu
+hx config.nu
+config env
+exit
+config nu
+hx
+cd `Library/Application Support/nushell/`
+ls
+cat history.txt
+vi env.nu
+exit
+config nu
+brew --help
+hx .zshrc
+config nu
+config env
+cd code-learning/nushell/
+ls
+cd nu_scripts/custom-completions/
+ls
+nu env
+config env
+config nu
+date now
+date now | debug
+help format date
+exit
+config env
+exit
+env nu
+config nu
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
+config nu
+config env
+exit
+config env
+exit
+hx
+config env
+exit
+config env
+config nu
+config env
+config nu
+ls
+config env
+config nu
+cal
+exit
+ls
+cal
+config nu
+exit
+ls
+config nu
+exit
+cal
+ls
+cd `Library/Application Support/nushell/`
+la
+ls
+mkdir ~/.config/nushell
+ln -s config.nu ~/.config/nushell/config.nu
+rm ~/.config/nushell/config.nu
+ln -s config.nu ~/.config/nushell/config.nu
+ln -s env.nu ~/.config/nushell/env.nu
+ls ~/.config/nushell/
+cd ~/code-learning/
+ls
+..
+ls
+cd code-learning/nushell/
+ls
+hx README.md
+cargo --list
+hx README.md
+l
+ls
+hx README.md
+cd nu_scripts/
+ls
+cd custom-completions/
+ls
+cd man
+l
+ls
+bat man-completions.nu
+..
+cd git
+ls
+hx git-completions.nu
+..
+cd auto-generate/
+ls
+cd completions/
+ls
+..
+mdcat README.md
+open README.md
+ls
+hx parse-help.nu
+..
+ls
+..
+ls
+cd aliases/
+ls
+cd bat/
+ls
+hx bat-aliases.nu
+..
+hx git/git-aliases.nu
+..
+ls
+cd custom-completions/
+l
+ls
+..
+cd custom-menus/
+ls
+hx current_session_history_menu.nu
+cd fuzzy/
+la
+ls
+hx history.nu
+hx directory.nu
+hx modules.nu
+bat README.md
+..
+cd extra/
+ls
+hx commands.nu
+hx commands_with_description.nu
+hx vars.nu
+...
+ls
+cd modules/
+ls
+cd weather/
+ls
+bat README.md
+hx weatherdark.nu
+nu weatherdark.nu
+hx nu.nu
+nu get-weather.nu
+hx get-weather.nu
+get_weather
+..
+ls
+bat README.md
+cd completion-generator/
+ls
+hx completion-generator.nu
+...
+ls
+cd example-config/
+ls
+hx init.nu
+...
+ls
+bat nushell_cheat_sheet.md
+config env 
+config nu
+cargo install --list
+zsh
+brew install starship
+cargo update && cargo upgrade
+cargo update; cargo upgrade
+brew update; brew upgrade
+config env
+config nu
+exit
+cd code-learning/ildafy/
+ls
+..
+cd .config/
+ls
+ls -a
+l
+ls
+cd
+cd code-learning/nisinoon/
+l
+ls
+..
+cd prolog/
+ls
+cd scryer-prolog/
+cd ~/.config/
+hx starship.toml
+hx .config/starship.toml
+ls
+..
+cd ~/.config/
+neofetch 
+cd code-learning/starship/
+hx nerd-font-symbols.toml
+la
+ls
+hx pure-preset.toml
+hx starship.toml
+cd
+cd .config/
+hx starship.toml
+cd spotify-player/
+la
+ls
+spotify_player 
+hx theme.toml
+hx app.toml
+hx theme.toml
+spotify_player 
+..
+ls
+hx starship.toml
+exit
+l
+ls
+cd ~/code-learning/ildafy/
+hx pure-preset.toml tokyo-night.toml gruvbox-rainbow.toml bracketed-segments.toml pastel-powerline.toml
+cd
+config
+config env
+cd code-learning/ildafy/
+hx ~/.config/starship.toml
+ls
+git status
+pwd
+exit
+exit
+brew update; brew upgrade
+brew services restart sketchybar; yabai --restart-service
+exit
+cd code-learning/ildafy/
+..
+ls
+cd c/the_book/chp01/1.1_hello/
+cd
+aliases
+help aliase
+help aliases 
+help
+sys | get host
+ps | where cpu > 0
+time
+help
+help commands
+datetime now
+date now
+help date
+help date now
+help commands 
+clear
+help explore
+ls | explore
+cargo --help
+cargo --list
+hx .zshrc
+cargo install --list
+help define
+help def
+cd code-learning/nushell/
+ls
+cargo install --list
+cargo --list
+cargo upgrade
+cargo --list
+cargo install --list
+cargo install --help
+hx cargo_upgrade_installed.nu
+nu cargo_upgrade_installed.nu
+cd code-learning/nushell/
+nu cargo_upgrade_installed.nu
+cargo install --list
+cargo install --help
+cargo help install
+cargo install --list | lines
+cargo install --list | parse "{package}:" | get package
+cargo install --list | parse "{package}:" | lines
+cargo install --list | parse "{package}:" 
+cargo install --list | lines | parse "{package}:"
+cargo install --list | lines | parse "{package}:" | get package | lines
+cargo install --list | lines | parse "{package}:" | get package
+cargo install taplo-cli v0.8.1
+cargo install taplo-cli
+cargo install --list
+cargo install rust-ld
+cargo install --list | lines | parse "{package}:"
+cargo install --list | lines | parse "{package} {version}:"
+cargo install --list | lines | parse "{package} {version}:" | get package
+hx health
+hx --health
+l
+ls
+nu cargo_upgrade_installed.nu
+cargo upgrade
+packages
+$packages
+$packages | each { |$pkg| cargo install $pkg }
+cargo install nu --features="dataframe" --features="extra" --features="plugin"
+hx cargo_upgrade_installed.nu
+nu --lsp
+hx cargo_upgrade_installed.nu
+la
+ls
+hx cargo_upgrade_installed.nu
+exit
+cargo install cargo-update
+cargo install-update --list
+exit
+$packages
+help commands 
+help url parse
+help to md
+help stor
+help stor export
+help stor create
+help modules 
+help generate
+help for
+help find
+help explain
+help encode
+help dfr rolling
+help dfr median
+ls
+cd code-learning/nushell/
+mkdir experimentation; mv cargo_upgrade_installed.nu experimentation/
+ls
+hx DAILY_TRACKER_DRAFTING.nu
+help commandline
+hx DAILY_TRACKER_DRAFTING.nu
+exit
+brew update; brew upgrade
+overlay list
+help externs 
+help extern
+help echo
+hx .config/starship.toml
+ech o
+help ssh
+help commands 
+help commands | group-by category
+version
+help random dice
+random --dice 4 --sides 4
+random dice --dice 4 --sides 4
+random dice --dice 4 --side
+random dice --dice 4 --sides 4
+random dice --dice 4 --side
+random dice --dice 4 --sides 4
+ls
+which nu
+cd .cargo/
+ls
+cd bin/
+l
+ls
+cd nu
+..
+ls
+..
+ls
+ssh ubuntu@our-sphere.com
+ls
+..
+cd
+..
+cd
+code-learning/
+ildafy/
+cd /
+cd ~/code-learning/ildafy/
+..
+cd code-learning/
+cd ../Documents/
+..
+cd code-learning/
+ls
+..
+ls
+cd GitHub/
+ls
+..
+cd
+ls
+cd Music/
+ls
+cd Music/
+ls
+...
+cd code-learning/
+cd ildafy/
+..
+cd nisinoon/
+ls
+..
+ls
+cd git
+ls
+cd ../ttrpg/
+ls
+cd dave-menninger/
+ls
+cd kartana/
+git status
+..
+cd kartana/
+ls
+l
+cd
+hx `Obsidian Vaults/Thoughtworlds/🌅 Quick Notes/free.md`
+hx ~/.config/alacritty/alacritty.toml
+exit
+hx .config/starship.toml
+cd code-learning/
+cd ildafy/
+cd ~/Documents/
+..
+ls
+cd GitHub/
+..
+cd Desktop/
+cd
+exit
+hx .config/alacritty/alacritty.toml
+exit
+code-learning/
+open /etc/motd
+help $env
+$env
+hx /etc/motd
+sudo hx /etc/motd
+whoami
+brew update; brew upgrade
+exit
+which nu
+config env
+brew check
+brew status
+brew update
+$env.HOMEBREW_INSTALL_BADGE
+config env
+help export
+$env.HOMEBREW_INSTALL_BADGE = "☕☕☕"
+$env.HOMEBREW_INSTALL_BADGE
+hx ~/.zshrc
+exit
+exit
+$env.HOMEBREW_INSTALL_BADGE
+config env
+exit
+$env.HOMEBREW_INSTALL_BADGE
+config env
+help http
+http get wttr.in
+http get https://wttr.in
+http get https://wttr.in/Oxford,%20Ohio?1mFnq
+http get https://wttr.in/?1mFnq
+http get https://wttr.in/?format=4
+http get https://wttr.in/?format=4m
+http get https://wttr.in/?format=4
+http get https://v3.wttr.in
+http get https://v3.wttr.in/Ohio.sxl
+http get https://v2.wttr.in
+http get https://v2n.wttr.in
+http get https://wttr.in/?format=4
+hx ~/.zshrc
+cd .config/sketchybar/plugins/
+ls
+http get https://wttr.in/?m&format=4
+http get https://wttr.in/?m&format=%t+%m+%w
+http get https://wttr.in/?m&format=%t+%m+%w+%P
+config nu
+config env
+hx weather.sh
+config nu
+weather
+exit
+weather
+config nu
+exit
+l
+la
+ls --all
+config nu
+exit
+la
+forecast 
+exit
+cd code-learning/
+hx ~/.config/alacritty/alacritty.toml
+hx ~/.config/starship.toml
+exit
+forecast 
+ls
+help ls
+ls -f
+clear
+weather
+cd code-learning/ildafy/
+hx ~/.config/starship.toml
+..
+ildafy/
+code-learning/ildafy/
+hx Cargo.toml
+cd ..
+ilbmtoppm 
+ildafy/
+..
+cd ildafy/
+..
+ildafy/
+hx Cargo.toml
+..
+cd ildafy/
+..
+cd ildafy/
+cd src/
+..
+spotify_player 
+exit
+hx ~/.config/starship.toml
+exit
+ls
+cd code-learning/
+ls
+cd nushell/
+ls
+cd experimentation/
+config nu
+hx ~/.config/starship.toml
+clear
+hx ~/.config/starship.toml
+clear
+cd code-learning/
+ls
+cd javascript/
+ls
+...
+hx ~/.config/starship.toml
+ls
+mkdir daily_tracker
+cd daily_tracker/
+exit
+bat ~/.config/starship.toml
+exit
+exit
+cd code-learning/ildafy/
+ls
+la
+l
+cargo check
+config nu
+help ls
+help commands 
+help sort
+help sort-by
+ls
+config nu
+l
+ls
+config nu
+ls | sort-by modified
+ls | sort-by modified -r
+config nu
+l
+config nu
+help ls
+l
+ls
+hx LICENSE
+hx `~/Obsidian Vaults/Professionalia/JonathanVideos.md`
+cd `Obsidian Vaults/Professionalia/`
+open TODO.md
+mdcat TODO.md
+mdcat TODO.md | bat
+hx Dailies/Dailies/2024-01-09.md
+exit
+hx TODO.md
+la
+hx CHANGELOG-serious.md
+git add --all --update
+git add --update
+git commit
+git push
+hx ~/.config/starship.toml
+cd ~/
+ls
+cd code-learning/
+ls
+..
+cd .dotfiles/
+ls
+la
+mdcat README.md
+cd .config/
+la
+cp ~/.config/starship.toml .
+ls
+..
+ls ~
+$nu.env-path
+mkdir nushell; cp `~/Library/Application Support/nushell/config.nu` nushell/
+ls
+ls nushell
+cp `~/Library/Application Support/nushell/env.nu` nushell/
+ls nushell/
+..
+cd .dotfiles/
+la
+git status
+git add --all
+git commit
+hx README.md
+git add --update
+git commit
+git push
+..
+http get https://raw.githubusercontent.com/helix-editor/helix/master/languages.toml | open
+http get https://raw.githubusercontent.com/helix-editor/helix/master/languages.toml
+help http
+help fetch
+fetch https://raw.githubusercontent.com/helix-editor/helix/master/languages.toml
+http get https://raw.githubusercontent.com/helix-editor/helix/master/languages.toml | from toml
+hx .config/helix/languages.toml
+hx --help
+hx --health
+hx .config/helix/languages.toml
+hx health
+hx --health
+which nu-lsp
+nu --lsp
+hx --help
+w3m https://raw.githubusercontent.com/helix-editor/helix/master/languages.toml
+exit
+hx --grammar fetch
+hx --grammar build
+hx --health
+config nu
+cd code-learning/nushell/
+ls
+spotify_player 
+hx README.md
+ls
+la
+cd experimentation/
+ls
+help http get
+cd code-learning/nushell/
+cd experimentation/
+ls
+help commands 
+nu-check weather.nu
+ls
+nu-check weather.nu
+nu weather.nu
+forecast
+source weather.nu
+forecast
+exit
+hx weather.nu
+exit
+cd code-learning/nushell/
+cd experimentation/
+cd experimentation/
+ls
+ls
+forecast
+ls
+def weather [] {http get https://v2.wttr.in}; weather
+weather
+exit
+hx weather.nu
+exit
+cd code-learning/nushell/experimentation/
+weather
+open weather.nu
+def weather [ --forecast (-f) ] {if $forecast {[http get https://v2.wttr.in]} else {[http get https://wttr.in/?m&format=%t+%m+%w+%P]}}
+weather
+def weather [ --forecast (-f) ] {if $forecast { http get https://v2.wttr.in } else { http get https://wttr.in/?m&format=%t+%m+%w+%P }}
+weather
+weather -f
+hx weather.nu
+ls
+enter ~/.config/nushell/
+shells
+ls
+hx config.nu
+ls
+rm config.nu env.nu
+ls
+config env
+ls
+mkdir scripts
+cd scripts/
+n
+ls
+cp weather.nu ~/.config/nushell/scripts/
+hx weather.nu
+n
+ls
+..
+ls
+mkdir plugins
+dexit
+cd ~/.config/nushell/scripts/
+hx weather.nu
+$env.NU_LIB_DIRS
+config env
+ls
+hx weather.nu
+touch mod.nu
+ls
+../plugins/
+hx README.md
+ls
+ls ..
+touch ../source.nu
+hx README.md
+..
+rm source.nu
+hx scripts/weather.nu
+rm scripts/mod.nu
+config env
+config nu
+ls
+$nu.env-path
+$env.config
+$nu.loginshell-path
+hx `~/Library/Application Support/nushell/`login.nu
+$nu.default-config-dir
+$nu.is-login
+$nu.home-path
+$nu.plugin-path
+$nu.startup-time
+$nu.default-config-dir
+$env.PATH
+$env
+version
+ls
+cp `~/Library/Application Support/nushell/config.nu` .; cp `~/Library/Application Support/nushell/env.nu` .
+ls
+$nu.default-config-dir
+$nu.default-config-dir = /Users/hunterlockwood/.config/nushell
+$nu.config-path
+$nu.config-path; $nu.env-path; $nu.plugin-path
+$nu.config-path
+ls `~/Library/Application Support/nushell/`
+hx ~/.config/nushell/config.nu
+exit
+config nu
+exi
+exit
+config nu
+rm ~/.config/nushell/config.nu; rm ~/.config/nushell/env.nu
+exit
+cd .config/nushell/
+ls
+la
+ls plugins/
+ls scripts/
+help mv
+helb glob
+help glob
+mv {plugins,scripts} `~/Library/Application Support/nushell/`
+mv plugins/ `../../Library/Application Support/nushell/`
+mv scripts/ `../../Library/Application Support/nushell/`
+ls
+..
+rm nushell/
+help ln
+man ln
+weather
+ls
+ln -s `~/Library/Application Support/nushell/` .
+ls
+cd nushell/
+la
+..
+cd ~/.dotfiles/
+ls
+...
+cd
+ls
+hx .config/nushell/config.nu
+ls
+open `A Summary of Our Sphere.pdf`
+cd .config/helix/
+la
+cp languages.toml languages_20240110.toml
+http get https://raw.githubusercontent.com/helix-editor/helix/master/languages.toml | save -p languages-test.toml
+ls
+bat languages-test.toml
+rm languages.toml
+mv languages-test.toml languages.toml
+ls
+hx ~/code-learning/nushell/README.md
+hx languages.toml
+brew update; brew upgrade
+cargo --list
+cargo install-update
+cargo install-update --list
+which helix
+which hx
+brew uninstall helix
+cargo install helix
+cargo install --list
+brew install helix
+hx languages.toml
+hx --health
+hx languages.toml
+ls
+rm languages.toml
+http get https://raw.githubusercontent.com/helix-editor/helix/master/languages.toml | save -p languages.toml
+ls
+hx config.toml
+cd ~/GitHub/
+ls
+git clone git@github.com:helix-editor/helix.git
+cd helix/
+cargo install --path helix-term --locked
+which hx
+ls
+du target/
+rm target/
+rm --recursive target/
+ls
+..
+cd ~/.config/helix/
+hx languages.toml
+mv languages.toml default_languages.toml
+ls
+mv languages_20240110.toml languages.toml
+hx
+clear
+ls
+{priority:{task:approvals, task:portal}} | from nuon
+{priority:{task:approvals, task:portal}} | to nuon
+{goals:{priority:{task:[approvals,portal]}}} | to nuon
+{goals:{priority:{task:[approvals,portal]}}} | to nuon | from nuon
+{priority:{task:[approvals,portal]}} | table
+{priority:{task:[approvals,portal]}} | to nuon
+{priority:{task:[approvals,portal]}} | to nuon | table
+{priority:{task:[approvals,portal]}} | to nuon | from nuon
+clear
+weather
+config nu
+config env
+exit
+{goalpriority:[approvals, portal review], rewardfun:[nushell,toml,process,workflow]} | to nuon | from nuon
+{goalpriority:[approvals, portalreview], rewardfun:[nushell,toml,process,workflow]} | to nuon | from nuon
+clear
+{goalpriority:[approvals, portalreview], rewardfun:[nushell,toml,process,workflow]} | to nuon | from nuon
+clear
+hx `~/Obsidian Vaults/Professionalia/portal-accessibility-notes.md`
+brew leaves
+exit
+arttime 
+exit
+arttime 
+hx languages.toml default_languages.toml --vsplit
+exit
+sudo shutdown -h now
+brew update; brew upgrade
+la
+cd personal-information-management/
+cd eml
+ls
+open `'Fan' term.eml`
+exit
+brew update; brew upgrade
+cd .config/helix/
+hx
+hx --health
+hx languages.toml default_languages.toml --vsplit
+hx --health
+exit
+cd
+brew leaves
+help lines
+brew leaves | lines
+la
+l
+rm `personal-information-management/eml/'Fan' term.eml`
+cd code-learning/nushell/experimentation/
+ls
+cd daily_tracker/
+ls
+ls ...
+mv ../../DAILY_TRACKER_DRAFTING.nu ./README.md
+ls
+open README.md
+help from
+hx workday_template.md `~/Obsidian Vaults/Professionalia/Templates/Periodic Notes/Daily Template.md` --vsplit
+ls
+bat README.md
+hx README.md
+...
+ls
+mdcat README.md
+hx README.md
+cd experimentation/daily_tracker/
+ls
+hx README.md
+cd
+cd code-learning/nushell/
+help enter
+help add
+ls
+enter experimentation/
+show
+shells
+p
+cd ~/.config/nushell/scripts/
+shells
+ls
+p
+ls
+cd ~/.config/nushell/
+p
+ls
+p
+ls
+hx env.nu
+g
+exit
+cd .config/
+hx starship.toml
+ls
+cd nushell/
+ls
+cd plugins/
+ls
+bat README.md
+enter ~/code-learning/nushell/nu_scripts/
+git fetch
+git pull
+ls
+cd sourced/
+ls
+hx fehbg.nu
+hx run-c-cpp.nu
+hx temp.nu
+hx TODO.md todo.nu --vsplit
+hx update_hosts.nu
+hx update-path.nu
+hx typeof.nu
+cd webscraping/
+ls
+...
+git status
+git pull
+rm .git/index.lock
+git fetch; git pull
+rm .git/index.lock
+git pull
+exit
+cd code-learning/nushell/
+ls
+cd nu_scripts/
+git status
+git pull
+..
+rm --recursive nu_scripts/
+ls
+cd ~/.config/nushell/
+cd scripts/
+ls
+mkdir mine; mv weather.nu mine
+ls
+mv mine/weather.nu .
+ls
+rm --recursive mine
+ls
+cd ~/code-learning/nushell/
+ls
+git clone git@github.com:nushell/nu_scripts.git
+git clone git@github.com:nushell/awesome-nu.git
+ls
+git clone git@github.com:nushell/nushell.git main_repo/
+ls
+cd nu_scripts/
+git status
+ls
+hx package.nuon
+cd custom-menus/
+ls
+cd fuzzy/
+ls
+hx directory.nu history.nu modules.nu
+..
+ls
+cd extra/
+ls
+hx commands_with_description.nu
+..
+ls
+cd benchmarks/
+ls
+open README.md
+..
+cd custom-completions/
+ls
+cd git
+ls
+hx git-completions.nu
+..
+cd rustup/
+hx rustup-completions.nu
+..
+ls
+..
+ls
+cd modules/
+ls
+mdcat README.md
+..
+ls
+cd sourced/
+ls
+..
+ls
+cd stdlib-candidate/
+ls
+hx str.nu
+hx fs.nu
+hx record/README.md
+ls
+cd code-learning/nushell/
+ls
+cd main_repo/
+ls
+cd scripts/; ls
+config env
+config nu
+..
+ls
+cd crates/
+config nu
+exit
+cd code-learning/nushell/
+config env
+config nu
+cd code-learning/nushell/
+exit
+cd code-learning/nushell/main_repo/
+ls
+cd crates/
+ls
+mdcat README.md
+nu --lsp
+cd nu-plugin/
+ls
+..
+cd nu_plugin_custom_values/
+ls
+cd src/
+ls
+open main.rs
+open cool_custom_value.rs
+..
+cd nu_plugin_query/
+ls
+open README.md
+cd src/
+ls
+cd nu
+ls
+la
+open mod.rs
+..
+ls
+help query
+..
+cd ...
+cd awesome-nu/
+ls
+bat README.md
+bat config.yaml
+bat plugin_details.md
+mdcat plugin_details.md
+bat action.nu
+ls
+open README.md
+..
+cd experimentation/
+ls
+..
+hx README.md
+help from
+help from eml
+cd main_repo/scripts/
+ls
+../crates/
+ls
+cd nu_plugin_formats/
+ls
+bat README.md
+...
+ls
+..
+ls
+cd nu_scripts/
+ls
+cd sourced/
+ls
+ls misc/
+bat misc/nu_defs.nu
+ls cool-oneliners/
+enter ~/.config/nushell/
+p
+ls
+p
+ls
+p
+ls
+ls fun
+ls webscraping/
+hx webscraping/nuschiit.nu
+hx webscraping/shell_stars.nu
+..
+ls
+cd modules/
+ls
+cd formats/
+ls
+..
+cd random-list
+ls
+..
+hx random-list/random-list.nu
+hx completion-generator/completion-generator.nu
+hx data_extraction/ultimate_extractor.nu
+help commands | where command_type == "plugin"
+help commands
+..
+ls
+cd example-config/
+ls
+hx init.nu
+hx config.nu
+..
+ls
+hx nu-hooks/
+cd nu-hooks/
+ls
+cd rusty-paths/
+ls
+hx rusty-paths.nu
+..
+ls
+cd make_release/
+ls
+..
+ls
+hx main_repo/crates/
+cd main_repo/crates/
+ls | str contains 'nu_plugin'
+ls | str contains 'nu_plugin' name
+ls | where {str contains 'nu_plugin' name}
+ls | where name =~ "nu_plugin"
+cd nu_plugin_formats/
+ls
+mdcat README.md
+which nu
+open README.md
+cargo build
+ls
+..
+ls
+ls | where name =~ "nu_plugin"
+cd nu_plugin_query/
+ls
+cargo build
+ls
+..
+cd nu_plugin_query/
+..
+ls | where name =~ "nu_plugin"
+..
+ls
+cd target/debug/
+ls
+mv nu_plugin_formats ~/.config/nushell/plugins/; mv nu_plugin_query ~/.config/nushell/plugins/
+cd ~/.config/nushell/plugins/
+ls
+bat README.md
+register ./nu_plugin_formats
+register ./nu_plugin_query
+help from eml
+config env
+shells
+p
+cd ~/code-learning/nushell/
+ls
+git clone git@github.com:Euphrasiologist/nu_plugin_plot.git
+mkdir plugins
+rm plugins
+ls
+cd nu_plugin_plot/
+ls
+cargo build
+ls
+mv target/debug/nu_plugin_plot ~/.config/nushell/plugins/
+p
+ls
+register ./nu_plugin_plot
+help plot
+p
+ls
+..
+mkdir plugins
+mv nu_plugin_plot/ plugins/
+cd plugins/
+config env
+ls
+..
+ls
+cd plugins/
+ls
+git clone git@github.com:JosephTLyons/nu_plugin_units.git
+git clone git@github.com:fdncred/nu_plugin_str_similarity.git
+cd nu_plugin_str_similarity/
+ls
+cargo build
+..
+cd nu_plugin_units/
+cargo build
+cd target/debug/
+ls
+mv nu_plugin_units ~/.config/nushell/plugins/
+p
+ls
+p
+...
+config env
+..
+ls
+cd nu_plugin_str_similarity/
+cargo build
+ls
+cd ...
+cd main_repo/crates/
+ls
+mv ../../plugins/nu_plugin_str_similarity/ .
+ls
+cd nu_plugin_str_similarity/
+cargo build
+..
+mv nu_plugin_str_similarity/ ~/code-learning/nushell/plugins/
+...
+cd plugins/
+ls
+cd nu_plugin_str_similarity/
+hx Cargo.toml
+ls
+cargo build
+hx Cargo.toml
+cargo build
+ls
+mv target/debug/nu_plugin_str_similarity ~/.config/nushell/plugins/
+p
+ls
+help commands | where command_type == "plugin"
+register ./nu_plugin_str_similarity; register ./nu_plugin_units
+help units
+help str_similarity
+help commands | where command_type == "plugin"
+help str similarity
+ls
+..
+cd scripts/
+ls
+help register
+help use
+help std
+help ellie
+help std ellie
+help modules
+l
+bat weather.nu
+l
+config nu
+config env
+ls
+open weather.nu
+help source
+help config
+config nu
+weather
+exit
+hx ~/.config/nushell/scripts/weather.nu
+exit
+weather
+weather --forecast
+exit
+l
+ls
+cd `Obsidian Vaults/TTRPG/5e/myaamia/`
+ls
+hx `character notes.md`
+which himalaya
+himalaya --version
+cd GitHub/
+l
+..
+fzf --help
+fzf
+which himalaya
+cargo --list
+cargo install --list
+cargo-install-update 
+cargo-install-update --all
+history
+help commands 
+ls
+cd GitHub/
+ls
+git clone git@github.com:soywod/himalaya.git
+l
+cargo install --list
+cargo install-update
+cargo install-update --all
+exit
+version
+help dfr
+cargo install nu --features="dataframe" --features="extra" --features="plugin"
+cargo-install-update-config
+cargo install-update-config
+cargo install-update-config --help
+cargo-install-update-config --help
+cargo install-update-config --help
+ls
+cd Documents/
+ls
+cd LaTeX/
+ls
+enter ~/code-learning/
+ls
+cd latex/
+ls
+ln -s ~/Documents/LaTeX/acl-style-files/ .
+ls
+cd markdown-latex-boilerplate/
+ls
+git status
+la
+open _CONFIG.txt
+$env.EDITOR
+bat _SECTIONS.txt
+bat Makefile
+cd source/
+ls
+../templates/
+ls
+enter ../source/
+p
+ls
+help shells
+help enter
+help leave
+help show
+show --help
+shells --help
+enter --help
+help commands | where command_type == "core"
+help commands | where command_type == "std"
+help commands
+help commands | where command_type == "default"
+help commands | where category == "default"
+help drop
+config env
+config nu
+weather --forecast
+weather
+n
+ls
+hx template.tex
+.. 
+..
+ls
+..
+ls
+n
+ls
+hx metadata.yml
+which visidata
+visidata --help
+which gnuplot
+which termplot
+ls
+hx chapter1.md
+exit
+help main
+help weather
+hx ~/.config/nushell/scripts/weather.nu
+exit
+hx ~/.config/nushell/scripts/weather.nu
+exit
+weather
+config env
+config nu
+cd code-learning/nushell/nu_scripts/
+ls
+cd modules/
+ls
+cd weather/
+ls
+hx nu.nu
+bat README.md
+hx get-weather.nu
+config nu
+cd ~/.config/nushell/scripts/
+ls
+hx weather.nu
+config nu
+exit
+config nu
+hx ~/.config/nushell/scripts/weather.nu
+config nu
+exit
+hx ~/.config/nushell/scripts/weather.nu
+exit
+config nu
+hx ~/.config/nushell/scripts/weather.nu
+exit
+hx ~/.config/nushell/scripts/weather.nu
+exit
+hx ~/.config/nushell/scripts/weather.nu
+config nu
+exit
+cd ~/.config/nushell/scripts/
+ls
+mv weather.nu fetch-wttr.nu
+hx fetch-wttr.nu
+config nu
+exit
+weather
+help weather
+help commands | where category == "cusotm"
+help commands | where category == "custom"
+help commands | sort-by category
+help commands | where command_type == "custom"
+help commands | where command_type == "plugin"
+help plot
+plot
+plot [3.75, 4, 3.5, 4, 4.5, 4.5]
+plot 3.75, 4, 3.5, 4, 4.5, 4.5
+help list
+[3.75, 4, 3.5, 4, 4.5, 4.5] | plot
+[3.75, 4.0, 3.5, 4.0, 4.5, 4.5] | plot
+[3.75, 4.0, 3.5, 4.0, 4.5, 4.5] | plot --height 5
+[3.75, 4.0, 3.5, 4.0, 4.5, 4.5] | plot
+brew update; brew upgrade
+cd .config/
+cd nushell/
+ls
+hx plugin.nu
+cd plugins/
+ls
+cd
+l
+ls
+config env
+config nu
+help ls
+help stor
+help dfr
+cd code-learning/
+enter nushell/
+p
+enter python/
+ls
+cd gdoc-to-ilda/
+ls
+p
+cd nushell/
+ls
+cd experimentation/
+ls
+mkdir ilda_process; cd ilda_process
+p
+shells
+../rust/
+ls
+git status
+cd gdoc_to_ilda_rs/
+ls
+bat README
+p
+ls
+bat README
+p
+ls
+p
+cd src/
+ls
+hx main.rs
+..
+hx mapping.toml
+p
+ls
+hx gdoc-to-ilda.py
+exit
+ls
+ls | sort-by modified
+ls | sort-by modified -r
+ls | sort-by type
+ls | sort-by type -r
+ls | sort-by type
+shells
+cd GitHub/
+ls
+cd himalaya/
+ls
+cd src/
+ls
+..
+explore Cargo.toml
+help explore
+open Cargo.toml | explore
+cd
+config env
+env | explore
+env
+$env
+$env | explore
+help fzf
+help ^fzf
+man fzf
+fzf --help
+config env
+keybindings list 
+keybindings list | where type == events
+fd --help
+which fd
+hx .zshrc
+exit
+config env
+exit
+config env
+vi `~/Library/Application Support/nushell/env.nu`
+exit
+fzf
+exit
+cd code-learning/nushell/
+fzf
+weather
+config nu
+exit
+help open
+help nuopen
+config env
+config nu
+exit
+l
+cd personal-information-management/
+ls
+cd brain/
+ls
+../identity/
+ls
+...
+cd GitHub/
+ls
+cd helix/
+ls
+which helix
+which hx
+hx --version
+..
+ls
+..
+cd code-learning/
+ls
+brew leaves
+la
+cd prolog/
+ls
+cd scryer-prolog/
+ls
+git status
+which prolog
+which scryer-prolog.wxs
+which scryer-prolog
+enter ~/bin/
+ls
+exit
+scryer-prolog
+cd bin
+ls
+./scryer-prolog
+cd bin
+ls
+dlv
+^scryer-prolog
+config env
+exit
+^scryer-prolog
+dlv
+dlv2
+cd GitHub/
+ls
+cd ~/code-learning/answer-set-programming/
+ls
+cd crepe/
+ls
+mdcat README.md
+mdcat README.md | bat 
+..
+cd potassco/
+ls
+cd asprilo/
+ls
+bat README.md
+..
+cd clingo; ls
+bat README.md
+git status
+cd examples/
+ls
+cd clingo/
+ls
+...
+..
+cd systems/
+ls
+..
+ls tree-sitter-clingo/
+cd tree-sitter-clingo/
+git status
+which node
+ls
+bat grammar.js
+cd src/
+ls
+bat grammar.json
+bat tree_sitter/parser.h
+...
+..
+ls
+cd ildalog/
+ls
+git status
+cd src/
+ls
+bat main.rs
+hx main.rs
+ls
+...
+ls
+cd crepe/
+ls
+bat README.md
+..
+ls
+cd ildalog/
+ls
+bat Cargo.toml
+cargo check
+cd
+cd code-learning/
+ls
+cd onto/
+ls
+..
+ls datasets/
+cd datasets/
+ls
+open nisinoon-cleanedup-4col.csv
+nuopen nisinoon-cleanedup-4col.csv
+ls
+ls ildafy/
+mkdir menominee_monica
+mv 2023-06-production-menominee-backup.sql menominee_monica/
+ls menom_ilda_scratch/
+mv menom_ilda_scratch/ menominee_monica/
+ls
+ls ildafy/
+mv ildafy/ menominee_monica/menom_ilda_scratch/
+mkdir myaamia
+mv 2024-11-14_entries.json morphemes-20230511.csv nisinoon-cleanedup-4col.csv stems-20230511.csv myaamia/
+mv 2024-11-14_entries.json myaamia/
+mv morphemes-20230511.csv myaamia/
+mv nisinoon-cleanedup-4col.csv myaamia/
+mv Michelson.csv myaamia/
+ls
+mv stems-20230511.csv myaamia/
+ls myaamia/
+ls process/
+mv process/ menominee_monica/menom_ilda_scratch/
+ls
+l
+rm nisinoon/
+ls nisinoon/
+ls nisinoon/2024-01-14/
+..
+l
+help str similarity
+help str
+help str substr
+help str substring
+help str contains
+l
+cd nushell/
+ls
+cd plugins/
+ls
+..
+cd awesome-nu/
+cd ../nu_scripts/
+ls
+cd custom-completions/
+ls
+../custom-menus/
+ls
+bat current_session_history_menu.nu
+bat zoxide-menu.nu
+cd fuzzy/
+l
+bat README.md
+../extra/
+ls
+../../custom-completions/
+ls
+cd git/
+ls
+hx git-completions.nu
+...
+cd themes/
+ls
+nuopen README.md
+..
+l
+cd stdlib-candidate/
+ls
+bat README.md
+bat str.nu
+..
+cd nu-hooks/
+ls
+../example-config/
+ls
+../sourced/
+ls
+ls github/
+ls gitlab/
+ls imaging/
+hx imaging/divider.nu
+hx fehbg.nu
+cd api_wrappers/
+ls
+hx wolframalpha.nu
+..
+ls
+cd webscraping/
+ls
+hx nuschiit.nu
+nuopen nuschiit.nu
+nuopen twitter.nu
+cd ~/code-learning/nushell/
+ls
+cd experimentation/
+ls
+mkdir opd
+cd opd
+exit
+hx opd_query_test
+cd code-learning/nushell/nu_scripts/
+ls
+../main_repo/
+ls
+cd scripts/
+ls
+..
+ls
+cd experimentation/
+ls
+bat weather.nu
+..
+fzf
+hx opd_query_test.nu
+# thinking about a nushell command to query the ojibwe people's dictionary<\n># query formula:<\n>### https://ojibwe.lib.umn.edu/search?&q={QUERY}&type={english,ojibwe}<\n>## then, in the results that appear, you're looking for probably this:<\n>### div class: english-search-main-entry <\n>
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query 'english-search-main-entry'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --attribute 'english-search-main-entry'
+help query
+help query web
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english
+hx nu_scripts/sourced/cool-oneliners/dict.nu nu_scripts/sourced/cool-oneliners/simple_http_request.nu
+cd experimentation/opd/
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query 'lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | get 'english-search-main-entry'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query div --attribute english-search-main-entry
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query span --attribute lemma
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --attribute lemma
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query span.lemma
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query div.english-search-main-entry
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query div.english-search-main-entry --as-table 
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query div.english-search-main-entry
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query div.english-search-main-entry#text
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --attribute div.english-search-main-entry
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query div.english-search-main-entry | lines
+help lines
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query 'span.lemma,span.badge'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query 'span.lemma,span.badge' --as-table 
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query 'span.lemma,span.badge' | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query span.main-entry-title
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query english-search-main-entry
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query div.english-search-main-entry
+help commands
+help commands | where command_type == "plugin"
+help commands | where category == "network"
+query web
+help query web
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | ast 
+hx opd_query_test.nu
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english --raw | query web --query 'span#title'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english --raw | query web --query '#title'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english --raw | query web --query main-entry-title
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query main-entry-title
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english --raw | query web --query .main-entry-title
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .main-entry-title
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web
+http get https://www.nushell.sh | query web --query 'h2, h2 + p' | group 2 | each {rotate --ccw tagline description} | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .english-search-keyword-group
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english
+http get https://ojibwe.lib.umn.edu/search?utf8=%E2%9C%93&q=bimo&commit=Search&type=ojibwe
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query '.main-entry-title > span'
+http get https://ojibwe.lib.umn.edu/search?&q=bimo&type=ojibwe | query web --query '.main-entry-title > span'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query '.keyword-group, .main-entry-title > span'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | lines
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | explain 
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | explain query web --query .search-results
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results
+explain
+help explain
+explain {http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results}
+explain {http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results} | reject cmd_index, cmd_name
+explain {http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results}  | test.txt
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | explain  | to text | save test.txt
+explain {http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results}  | to text | save test.txt
+nuopen test.txt
+explain {http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results}  | save test.txt
+explain {http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results}  | save test2.txt
+rm test.txt
+ls
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | flatten 
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | split row
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | split words 
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | detect columns 
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | split row -r '\n+'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | split row -r '\n'
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | split row ' '
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query .search-results | rotate --ccw 
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query ".main-entry-title + text"
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query ".main-entry-title + text" --as-html 
+help commands | where category == "network"
+url parse https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=exact&q=food&submit=Search
+help url parse
+'https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=exact&q=food&submit=Search' | url parse
+https://ojibwe.lib.umn.edu/advanced_search?type=main_entry&field=stem&scope=contains&q=miij&submit=Search | url parse
+'https://ojibwe.lib.umn.edu/advanced_search?type=main_entry&field=stem&scope=contains&q=miij&submit=Search' | url parse
+'https://ojibwe.lib.umn.edu/advanced_search?type=main_entry&field=lemma&scope=contains&q=miij&submit=Search' | url parse
+'https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi&submit=Search' | url parse
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi&submit=Search | query web --query .word-part-search-result
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result | split row '\n+'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result | split list --regex '\n+\<\n>'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result | split list --regex '\n+'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result | split list --regex '\n'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result | split list
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result | detect columns
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result 
+help parse
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result | parse "{form} {pos} {gloss}"
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result | parse "/{form}/ {pos} {gloss}"
+'https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi&submit=Search' | url parse
+'https://ojibwe.lib.umn.edu/advanced_search?type=main_entry&field=lemma&scope=contains&q=miij&submit=Search' | url parse
+'https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=exact&q=food&submit=Search' | url parse
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=walk | query web --query .english-search-main-entry
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=walk | query web --query .main-entry-search
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=walk | query web --query .english-search-main-entry
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .main-entry-search
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry
+ls
+hx opd_query_test.nu
+mv opd_query_test.nu opd_query_test_notes.nu
+ls
+[{type:keyword,field:keyword},{type:main_entry,field:lemma},{type:main_entry,field:stem},{type:word_part,field:form}]
+[{scope:contains},{scope:exact}]
+[{type:keyword,field:keyword},{type:main_entry,field:lemma},{type:main_entry,field:stem},{type:word_part,field:form}] | append [{scope:contains},{scope:exact}]
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | to nuon 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | to text 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | str trim 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | lines
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | split row
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | split row '\n+'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | split row ' '
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | split row -r ' '
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | split row --regex '\r?\n'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | split words
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | table --flatten 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | table
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .lemma | table --index 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | to xml
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search --raw | to xml
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search --raw | query web --query .lemma
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | table
+table --list 
+ls
+help commands
+help into
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | into record
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search --raw | query web --query .lemma | into record
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into string 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | split column --regex '\s*-\s*'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | split column --regex '\s*-\s*'
+history
+history session 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | group 3
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 3
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 1
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 1 | split column --regex ' '
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 1 | split column --regex '\s+'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 1 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 1 | split-by
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 1 | into record
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 1 | into record | split column
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 1 | into record | split column --regex '\s+'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=contains&q=zhi | query web --query .word-part-search-result | group 1 | into record | split column
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | group 1
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | group 1 | into record
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | group 1 | into record | to nuon
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | to nuon
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | group 3 | to nuon
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | lines
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | lines
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | str trim
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | str trim '  '
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | str trim -c '  '
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | str trim -c ' '
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | str trim -c '\n'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | str trim -c '\n+'
+help list
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | first 5
+help each
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | first 10 | each {|| split column ' '}
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | first 10 | each {|line| split column ' '}
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | each {|line| split column ' '}
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | each {|line| split words }
+hx opd_searcher.nu
+exit
+hx opd_query_test_notes.nu
+exit
+exit
+cd code-learning/nushell/
+l
+cd experimentation/opd/
+ls
+hx opd_query_test_notes.nu opd_searcher.nu --vsplit
+ls
+nuopen opd_query_test_notes.nu | to md 
+nuopen opd_query_test_notes.nu
+mv opd_query_test_notes.nu README.md
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | each {|line| split column ' ' }
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | split column ' '
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into value 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | str trim
+explain
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | str trim | split column
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | str trim | split column lines
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | str trim | column
+help column
+help columns
+help parse
+hx README.md
+exit
+nuopen README.md
+mdcat README.md
+hx ~/.config/alacritty/alacritty.toml
+exit
+weather --forecast 
+weather
+spotify_player 
+cd code-learning/nushell/experimentation/opd/
+ls
+exit
+hx README.md opd_searcher.nu --vsplit
+cd code-learning/nushell/experimentation/opd/
+cd code-learning/nushell/experimentation/opd/
+hx ~/.config/alacritty/alacritty.toml
+help url
+help url build-query
+{type:keyword, field:keyword, scope:contains, q:"by hand"} | url build-query
+help commands
+help commands | where name == "url"
+help url
+{type:keyword, field:keyword, scope:contains, q:"by hand"} | url build-query
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | str trim 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | str trim  | parse --regex '^\s*(\w+)\s*$(?:\s*\n)+^\s*(\w+)\s*$(?:\s*\n)+(?:\s*(?:\[\S\])?\s*$(?:\s*\n)+)*^\s*(.+?)\s*$(?:\s*\n)+'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | str trim | parse --regex  '^\s*(\w+)\s*$(?:\s*\n)+^\s*(\w+)\s*$(?:\s*\n)+(?:\s*(?:\[\S\])?\s*$(?:\s*\n)+)*^\s*(.+?)\s*$(?:\s*\n)+'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | parse --regex  '^\s*(\w+)\s*$(?:\s*\n)+^\s*(\w+)\s*$(?:\s*\n)+(?:\s*(?:\[\S\])?\s*$(?:\s*\n)+)*^\s*(.+?)\s*$(?:\s*\n)+'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --query .english-search-main-entry | into record | str trim  | split column --regex '^\s*(\w+)\s*$(?:\s*\n)+^\s*(\w+)\s*$(?:\s*\n)+(?:\s*(?:\[\S\])?\s*$(?:\s*\n)+)*^\s*(.+?)\s*$(?:\s*\n)+'
+help record
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --html --query .english-search-main-entry 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=contains&q=snow&submit=Search | query web --as-html --query .english-search-main-entry 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=keyword&field=keyword&scope=exact&q=snow&submit=Search | query web --as-html --query .english-search-main-entry 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=main_entry&field=lemma&scope=exact&q=bimose&submit=Search | query web --as-html --query .english-search-main-entry 
+http get https://ojibwe.lib.umn.edu/advanced_search?type=main_entry&field=lemma&scope=exact&q=bimose&submit=Search | query web --query .english-search-main-entry 
+hx README.md
+exi
+exit
+hx opd_searcher.nu
+exity
+exit
+sudo shutdown -h now
+cd `lockwoht@miamioh.edu - Google Drive/`
+ls
+cd `My Drive/digital linguistics comp ling/dlv-myaamia/reading/`
+ls
+..
+ls
+hx soundchange-notes.md
+cp soundchange-notes.md `~/Obsidian Vaults/Professionalia/Projects/MyaamiaCenter/`
+cd
+exit
+cd code-learning/nushell/experimentation/opd/
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma' | group 2
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma' | group 2 | rotate --ccw gloss lemma
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma' | group 2 | each {rotate --ccw gloss lemma} | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma' | each {rotate --ccw gloss lemma} | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma' | into record
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma' | group-by 
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --as-table [.keyword-group .lemma]
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group + .lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --as-html --query '.keyword-group .lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --as-html --query '.keyword-group, .lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=food&type=english | query web --as-html --query '.keyword-group, .lemma' | into record
+> http get https://www.nushell.sh | query web --query 'h2, h2 + p'
+http get https://www.nushell.sh | query web --query 'h2, h2 + p'
+http get https://www.nushell.sh | query web --query 'h2, h2 + p' | group 2
+http get https://www.nushell.sh | query web --query 'h2, h2 + p' | group 2 | each {rotate --ccw tagline description}
+http get https://www.nushell.sh | query web --query 'h2, h2 + p' | group 2 | each {rotate --ccw tagline description} | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma' 
+hx README.md opd_searcher.nu --vsplit
+exit
+enter ~/code-learning/nushell/nu_scripts/sourced/webscraping/
+hx nuschiit.nu
+help each while
+p
+hx README.md
+p
+nuopen shell_stars.nu
+nuopen twitter.nu
+l
+nuopen anagram_unscramble_scrape.nu
+..
+ls
+cd cool-oneliners/
+ls
+nuopen simple_http_request.nu
+nuopen dict.nu
+p
+hx opd_searcher.nu
+help def
+exit
+shells
+hx opd_searcher.nu
+cd
+brew update; brew upgrade
+cargo install --list
+cargo search --help
+cargo search nu
+cargo search himalaya
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .keyword-group + .lemma' 
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group, .lemma' 
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query '.keyword-group + .lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group + .lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query '.keyword-group'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query '.keyword-group'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query '.keyword-group, .keyword-group .lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query '.keyword-group .lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query 'div.keyword-group span.lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query 'span.lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query '.keyword-group, .lemma'
+hx ~/code-learning/nushell/experimentation/opd/README.md
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query 'span.lemma:first-child'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query 'div.main-entry-title > span:first-child'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query 'span.main-entry-title > span:first-child'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query 'span.main-entry-title:first-child'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query 'div.english-search-main-entry > span.main-entry-title > span.lemma'
+http get https://ojibwe.lib.umn.edu/search?&q=fetch&type=english | query web --query 'div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type'
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query 'div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type'
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query 'div.keyword-group'
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | group 2 | each {rotate --ccw keyword wordform} | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | group 2 | each {rotate --ccw keyword wordform} | flatten | into record
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | group 2 | each {rotate --ccw keyword wordform} | into record | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | group 2 | each {rotate --ccw keyword wordform}
+http get https://ojibwe.lib.umn.edu/search?&q=foot&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | group 2 | each {rotate --ccw keyword wordform} | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=test&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | group 2 | each {rotate --ccw keyword wordform} | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=bimose&type=ojibwe | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | group 2 | each {rotate --ccw keyword wordform} | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=bimose&type=ojibwe | query web --query 'span.lemma'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=main_entry&field=lemma&scope=contains&q=baang&submit=Search | query web --query '.english-search-main-entry'
+http get https://ojibwe.lib.umn.edu/advanced_search?type=word_part&field=form&scope=exact&q=in&submit=Search | query web --query .word-part-search-result
+help export
+help def
+help module
+help modules
+help +
+help append
+help add
+[foo bar rab oof] | url build-query 
+help url build-query
+help spread
+{q: [foo bar rab oof]} | url build-query
+{q: foo bar rab oof} | url build-query
+{q: "foo bar rab oof"} | url build-query
+[foo, bar, rab, oof] | str join +
+[foo, bar, rab, oof] | str join %20
+[foo, bar, rab, oof] | str join F
+help append
+help str
+help url
+let foo = ([rab, oof] | str join +)
+foo
+$foo
+let fubar = bar+$foo
+let fubar = (bar+$foo)
+let fubar = ("bar"+$foo)
+$fubar
+const OPD_BASE_URL = "https://ojibwe.lib.umn.edu/search?type=english&q="<\n>
+$OPD_BASE_URL
+$OPD_BASE_URL+$foo
+$OPD_BASE_URL + $foo
+help let
+echo ($OPD_BASE_URL + $foo)
+$OPD_BASE_URL + $foo
+($OPD_BASE_URL + $foo)
+echo $OPD_BASE_URL + $foo
+def opd [...searchterms: string] { let query = ($searchterms | str join +); http get ($OPD_BASE_URL + $query) | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | group 2 | each {rotate --ccw keyword wordform} | flatten }
+opd walk along
+opd fly
+opd walk
+http get https://ojibwe.lib.umn.edu/search?&q=walk&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | group 2 | each --keep-empty {rotate --ccw keyword wordform} | flatten
+http get https://ojibwe.lib.umn.edu/search?&q=walk&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type'
+http get https://ojibwe.lib.umn.edu/search?&q=walk&type=english | query web --query 'div.keyword-group + div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type'
+http get https://ojibwe.lib.umn.edu/search?&q=walk&type=english | query web --query 'div.keyword-group ~ div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type'
+http get https://ojibwe.lib.umn.edu/search?&q=approve&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type'
+http get https://ojibwe.lib.umn.edu/search?&q=ask&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type'
+http get https://ojibwe.lib.umn.edu/search?&q=ask&type=english | query web --query 'div.keyword-group, div.english-search-main-entry:first-of-type > span.main-entry-title:first-child > span.lemma:first-of-type' | into record
+help export
+tutor 
+tutor list
+tutor begin
+tutor tables
+tutor list
+tutor block
+tutor each
+help lines
+help web query
+help query web
+help expr
+tutor expr
+tutor shorthand
+tutor list
+tutor var
+$env.CDPATH
+[{type:word_part,field:form}] + [{scope:contains}]
+[{type:word_part,field:form}] | append [{scope:contains}]
+[{type:word_part,field:form}] | append {scope:contains}
+{type:word_part,field:form} | append {scope:contains}
+help append
+help join
+{type:word_part,field:form} | join {scope:contains}
+[{type:word_part,field:form}] | join [{scope:contains}]
+[{type:word_part,field:form}] | join [{scope:contains}] --right 
+help join 
+help record
+[{type:word_part,field:form}] | merge [{scope:contains}]
+{type:word_part,field:form} | merge {scope:contains}
+help match
+let OPD_TYPE = [{type:word_part,field:form},{type:main_entry,field:lemma}]
+OPD_TYPE.0
+$OPD_TYPE
+$OPD_TYPE.0
+$OPD_TYPE.1
+$OPD_TYPE.1 | merge $OPD_TYPE.1
+$OPD_TYPE.1 | merge $OPD_TYPE.0
+let OPD_SCOPE = [{scope:contains},{scope:exact}]
+$OPD_SCOPE.1
+$OPD_TYPE.1 | merge $OPD_SCOPE.1
+$OPD_TYPE.1 | merge $OPD_SCOPE.1 | url build-query 
+const OPD_ADV_SCOPE = [{scope:exact},{scope:contains},{scope:ends_with},{scope:starts_with}]<\n>
+$OPD_ADV_SCOPE.2
+$OPD_TYPE.1 | merge $OPD_ADV_SCOPE.2 | url build-query | prepend "https://ojibwe.lib.umn.edu/advanced_search?"
+help prepend
+"https://ojibwe.lib.umn.edu/advanced_search?" + ($OPD_TYPE.1 | merge $OPD_ADV_SCOPE.2 | url build-query)
+"https://ojibwe.lib.umn.edu/advanced_search?" + ($OPD_TYPE.1 | merge $OPD_ADV_SCOPE.2 | url build-query) + "?q=food"
+"https://ojibwe.lib.umn.edu/advanced_search?" + ($OPD_TYPE.1 | merge $OPD_ADV_SCOPE.2 | url build-query) + "?q=ose"
+"https://ojibwe.lib.umn.edu/advanced_search?" + ($OPD_TYPE.1 | merge $OPD_ADV_SCOPE.2 | url build-query) + "&q=ose"
+"https://ojibwe.lib.umn.edu/advanced_search?" + ($OPD_TYPE.1 | merge $OPD_ADV_SCOPE.2 | merge {q:foo} | url build-query)
+export def components [searchterm: string] {<\n>    http get ($OPD_ADV_BASE_URL + <\n>      ($OPD_ADV_TYPE.0 | merge $OPD_ADV_SCOPE.0 | merge {q:$searchterm} | url build-query)<\n>    )<\n>}<\n>
+const OPD_ADV_BASE_URL = "https://ojibwe.lib.umn.edu/advanced_search?"<\n>const OPD_ADV_SCOPE = [<\n>    {scope:exact},<\n>    {scope:contains},<\n>    {scope:ends_with},<\n>    {scope:starts_with}<\n>]<\n>
+export def components [searchterm: string] {<\n>    http get ($OPD_ADV_BASE_URL + <\n>      ($OPD_ADV_TYPE.0 | merge $OPD_ADV_SCOPE.0 | merge {q:$searchterm} | url build-query)<\n>    )<\n>}<\n>
+const OPD_ADV_TYPE = [<\n>    {type:word_part,field:form},<\n>    {type:main_entry,field:lemma},<\n>    {type:keyword,field:keyword}<\n>]<\n>
+export def components [searchterm: string] {<\n>    http get ($OPD_ADV_BASE_URL + <\n>      ($OPD_ADV_TYPE.0 | merge $OPD_ADV_SCOPE.0 | merge {q:$searchterm} | url build-query)<\n>    )<\n>}<\n>
+components ose
+hx ~/code-learning/nushell/experimentation/opd/css-drafts.md
+cd ~/code-learning/nushell/experimentation/opd/
+ls
+mv opd_searcher.nu opd.nu
+hx README.md
+mv README.md design-notes.md
+hx README.md
+$OPD_SCOPE
+history
+hx opd.nu
+l
+cp opd.nu ~/.config/nushell/scripts/
+config nu
+config env
+config nu
+exit
+exit
+opd cold
+help opd
+help opd components
+help components
+opd components
+opd components eji
+opd components eji --contains
+opd components --contains ji
+components --contains ji
+opd components ose
+hx ~/code-learning/nushell/experimentation/opd/opd.nu
+cp ~/code-learning/nushell/experimentation/opd/opd.nu ~/.config/nushell/scripts/
+exit
+help opd
+help components
+help opd components
+components -c ji
+components ose
+cd code-learning/nushell/experimentation/opd/
+hx opd.nu
+cp ~/code-learning/nushell/experimentation/opd/opd.nu ~/.config/nushell/scripts/
+config env
+config nu
+exit
+$env.EDITOR = hx
+hx ~/code-learning/nushell/experimentation/opd/opd.nu
+config nu
+exit
+cp ~/code-learning/nushell/experimentation/opd/opd.nu ~/.config/nushell/scripts/
+exit
+components ose
+opd components ose
+help query web
+hx ~/code-learning/nushell/experimentation/opd/opd.nu
+cp ~/code-learning/nushell/experimentation/opd/opd.nu ~/.config/nushell/scripts/
+exit
+help opd components
+help opd
+help components
+components ose
+opd components ose
+hx ~/code-learning/nushell/experimentation/opd/opd.nu
+cp ~/code-learning/nushell/experimentation/opd/opd.nu ~/.config/nushell/scripts/
+exit
+opd components ose
+hx ~/code-learning/nushell/experimentation/opd/opd.nu
+cp ~/code-learning/nushell/experimentation/opd/opd.nu ~/.config/nushell/scripts/
+exit
+opd components ose
+opd components ose --contains 
+$OPD_ADV_BASE_URL
+const OPD_ADV_BASE_URL = "https://ojibwe.lib.umn.edu/advanced_search?"<\n>const OPD_ADV_TYPE = [<\n>    {type:"word_part",field:"form"},<\n>    {type:"main_entry",field:"lemma"},<\n>    {type:"keyword",field:"keyword"}<\n>]<\n>
+$OPD_ADV_BASE_URL
+$OPD_ADV_BASE_URL | str join $OPD_ADV_TYPE.0
+hx ~/code-learning/nushell/experimentation/opd/opd.nu
+cp ~/code-learning/nushell/experimentation/opd/opd.nu ~/.config/nushell/scripts/
+exit
+exitj
+exit
+opd components ose
+opd components --contains ose
+help opd components
+help components
+components ose
+help opd
+help main
+hx ~/code-learning/nushell/experimentation/opd/opd.nu
+cd code-learning/nushell/experimentation/opd/
+mv opd.nu opd_searcher.nu
+hx opd_searcher.nu
+cp opd_searcher.nu ~/.config/nushell/scripts/
+rm ~/.config/nushell/scripts/opd.nu
+exit
+config nu
+exit
+help opd
+help opd components
+hx .config/nushell/scripts/opd_searcher.nu
+hx code-learning/nushell/experimentation/opd/opd_searcher.nu
+cd .dotfiles/
+ls
+cd nushell/
+ls
+..
+la
+enter ~
+la | where name == "git"
+la
+p
+ls
+la
+cp .zshrc .
+cp ~/.zshrc .
+cp ~/.gitignore .
+cp ~/.gitignore_htl .
+cd .config/
+ls
+mv ../nushell/ .
+cd nushell/
+ls
+cp ~/.config/nushell/config.nu .
+cp ~/.config/nushell/env.nu .
+cp ~/.config/nushell/scripts/ .
+cp --recursive ~/.config/nushell/scripts/ .
+ls
+..
+ls
+cd alacritty/
+la
+p
+cd .config/alacritty/
+ls
+p
+ls
+la
+mv ~/.config/alacritty/alacritty.toml .
+cp alacritty.toml ~/.config/alacritty/
+ls
+rm alacritty.yml
+ls alacritty/
+rm --recursive alacritty/
+ls
+n
+ls
+la
+..
+la
+p
+la
+..
+la
+cd himalaya/
+la
+n
+cd himalaya/
+../helix/
+n
+../helix/
+la
+p
+la
+n
+cp ~/.config/helix/languages.toml .
+cp ~/.config/helix/config.toml .
+la
+..
+la
+..
+la
+hx README.md
+git add --all
+git commit
+git push
+exit
+opd walk slowly
+opd components --contains bej
+opd components --contains bed
+code-learning/
+ls
+cd answer-set-programming/
+la
+mkdir datalog
+datalog/
+git clone git@github.com:DeMaCS-UNICAL/I-DLV.git
+ls
+../potassco/
+ls
+enter ~/GitHub/
+la
+mkdir logic_programming_symln
+cd logic_programming_symln/
+ln -s ~/code-learning/answer-set-programming/potassco/ .
+ln -s ~/code-learning/answer-set-programming/datalog/I-DLV/ .
+la
+p
+la
+..
+la
+p; la
+opd chicken
+la
+ln -s ~/code-learning/answer-set-programming/crepe/ .
+la
+cd crepe/
+la
+git status
+..
+la
+cd ~/GitHub/
+la
+cd logic_programming_symln/
+la
+p
+la
+..
+la
+cd nisinoon/
+la
+bat README.md
+dlv2 --version
+dlv2 --help
+weather --forecast 
+cd ~/bin/
+la
+..
+scryer-prolog --help
+cd code-learning/prolog/
+la
+scryer-prolog
+which python
+python --help
+python3 --version
+pip --version
+python3 --help
+python3 --help-all
+/upd
+which python3
+brew update; brew upgrade
+which pip
+which pip3
+which python3
+which venv
+which virtualenv
+brew leaves
+brew list
+pip3 --help
+pip --help
+pip --version
+pip3 --version
+python3 -m pip install --upgrade pip
+pip3
+pip3 check
+cd ../python/
+la
+cd stringsplitter/
+la
+hx main.py
+..
+la
+cd nltk-stuff/
+la
+git status
+..
+fzf
+la
+git status
+which nltk
+cd code-learning/python/
+la
+la
+hx README.md
+cd ../nisinoon/
+la
+../javascript/
+la
+..
+la
+mkdir languages
+la .dusty_corner/
+la .dusty_corner/hellos-worlds/
+laj
+la
+mv c languages/
+mv javascript/ languages/
+mv prolog/ languages/
+mv prompt-engineering/ languages/
+la
+la nushell/
+la rust/
+mv rust/ languages/
+la
+la latex/
+mv latex/ languages/
+mv nushell/ languages/
+mv python/ languages/
+la onto
+la
+mv onto datasets/
+la datasets/
+mkdir datasets/algonquian
+mv datasets/menominee_monica/ datasets/algonquian/
+mv datasets/myaamia/ datasets/algonquian/
+la datasets/nisinoon/
+la
+la embedded/
+la .dusty_corner/
+cd .dusty_corner/
+la menominee-ilda/
+cd hellos-worlds/
+la
+la css
+cd css
+la
+..
+la php
+mv php ../../languages/
+l
+la java
+la javascript/
+mv javascript/hello-world.js ../../languages/javascript/
+la
+la css
+..
+la
+rm --recursive hellos-worlds/
+la
+..
+la
+la git
+la answer-set-programming/
+la
+la starship/
+rm --recursive starship/
+la
+la ttrpg
+rm --recursive git
+la
+mv answer-set-programming/ languages/
+la
+cd languages/
+cd answer-set-programming/
+la datalog/
+la ildalog/
+bat ildalog/README.md
+mv ildalog/ ../../
+la
+la myaamia-dlv/
+bat myaamia-dlv/README.md
+cd myaamia-dlv/
+git status
+..
+la
+la myaamia-word-decomposition/
+cd myaamia-word-decomposition/
+git status
+la
+bat README.md
+..
+la
+mv myaamia-word-decomposition/ ../../
+la
+..
+la
+la prompt-engineering/
+la nushell/
+..
+la
+cd ildalog/
+la
+git status
+bat README.md
+l
+bat README.md
+bat src/main.rs
+..
+la
+mv ildalog/ .dusty_corner/
+la
+cd nisinoon/
+git init .
+la
+git add --update
+enter ~/.config/nushell/
+la
+cd scripts/
+la
+..
+mkdir completions
+cd completions/
+ln -s ~/code-learning/languages/nushell/nu_scripts/custom-completions/cargo/cargo-completions.nu .
+ln -s ~/code-learning/languages/nushell/nu_scripts/custom-completions/git/git-completions.nu .
+ln -s ~/code-learning/languages/nushell/nu_scripts/custom-completions/make/make-completions.nu .
+ln -s ~/code-learning/languages/nushell/nu_scripts/custom-completions/man/man-completions.nu .
+ln -s ~/code-learning/languages/nushell/nu_scripts/custom-completions/gh/gh-completions.nu .
+ln -s ~/code-learning/languages/nushell/nu_scripts/custom-completions/npm/npm-completions.nu .
+ln -s ~/code-learning/languages/nushell/nu_scripts/custom-completions/rustup/rustup-completions.nu .
+la
+p
+hx README.md
+..
+la
+config nu
+$env.NU_LIB_DIRS
+config env
+help use
+config nu
+la ~/.config/nushell/scripts/
+ouch ($nu.default-config-dir | path join completions mod.nu)
+touch ($nu.default-config-dir | path join completions mod.nu)
+touch ($nu.default-config-dir | path join scripts mod.nu)
+la ~/.config/nushell/completions/
+config env
+config nu
+la
+la
+shells
+hx mod.nu
+config nu
+exit
+exit
+config nu
+exit
+config env
+nu --help
+help commands | where command_type == "plugin"
+help commands | sort-by category | select [name command_type usage]
+config nu
+help commands | sort-by category | select [name category command_type usage]
+help commands | sort-by command_type | select [name category command_type usage]
+$env.default-config-dir
+$nu.default-config-dir
+$nu.default-config-dir | path join 'scripts'
+$env.NU_LIB_DIRS
+hx .config/nushell/completions/mod.nu
+config env
+nu --help
+config nu
+config env
+exit
+exit
+config nu
+hx .config/nushell/completions/mod.nu
+cd .config/nushell/completions/
+hx mod.nu
+config nu
+exit
+help commands | sort-by command_type | select [command_type name category]
+help commands | reject command_type == builtin  | sort-by command_type | select [command_type name category]
+config nu
+opd
+config nu
+exit
+config nu
+exit
+config nu
+help source
+help register
+help use
+use completions *
+use completions/ *
+$env.NU_LIB_DIRS
+config env
+config nu
+exit
+config nu
+exit
+hx .config/nushell/completions/mod.nu
+exit
+hx .config/nushell/completions/mod.nu
+cd .config/nushell/completions/
+hx mod.nu
+exit
+cd .config/nushell/completions/
+hx mod.nu
+exit
+npm
+cd .config/nushell/completions/
+la
+hx make-completions.nu
+hx man-completions.nu
+hx mod.nu
+rm make-completions.nu
+rm man-completions.nu
+la
+hx mod.nu
+config nu
+cd ~/.dotfiles/
+la
+cd .config/
+la
+cd nushell/
+la
+cp ~/.config/nushell/config.nu .
+cp ~/.config/nushell/env.nu .
+cp --recursive ~/.config/nushell/completions/ .
+la
+..
+ls
+..
+ls
+hx README.md
+git add --update
+git add --all --update
+git commit
+git add --all
+git commit
+git push
+..
+ls
+code-learning/
+ls
+cd nisinoon/
+ls
+cd code-learning/nisinoon/
+la
+git status
+git submodule add git@github.com:digitallinguistics/app.git app
+la
+cd app/
+la
+..
+l
+git submodule add git@github.com:digitallinguistics/Nisinoon.git data
+git submodule add git@github.com:digitallinguistics/data-explorer.git data-explorer
+git submodule add git@github.com:digitallinguistics/database.git database
+git submodule add git@github.com:digitallinguistics/Nisinoon.net.git website
+la
+git submodule init
+git submodule update
+git add --all
+git commit -m "Initialize submodule approach to learning Nisinoon codebase"
+la
+git status
+git add --update
+git commit
+git status
+hx README.md
+exit
+la
+bat .gitmodules
+cd data/
+l
+cd data/
+l
+..
+la
+cd app
+la
+bat server.cjs
+bat .browserslistrc
+bat .storybook/
+cd .storybook/
+la
+bat preview-body.hbs
+..
+la
+bat lighthouserc.json
+cd src/
+la
+bat index.hbs
+cd pages/
+l
+cd Lexicon/
+l
+..
+la
+cd Home/
+la
+bat Home.hbs
+...
+la
+cd pages/
+la
+cd Home/
+la
+..
+cd Languages/
+la
+..
+cd Lexicon/
+la
+bat Lexicon.hbs
+..
+fzf
+bat Home/Home.hbs
+...
+la
+bat README.md
+..
+la
+cd data/
+la
+../data-explorer/
+la
+cd app
+la
+bat index.js
+..
+fzf
+cd components/
+la
+cd PageTitle/
+la
+bat PageTitle.less
+...
+la
+bat index.js
+cd app
+la
+bat index.js
+bat routing.md
+mdcat routing.md
+..
+l
+cd pages/
+la
+cd Project/
+la
+bat Project.hbs
+...
+fzf
+cd layouts/main/
+la
+bat head.hbs
+l
+brew update; brew upgrade
+...
+l
+..
+l
+..
+l
+cd embedded/
+l
+cd rust/
+l
+...
+l
+cd languages/
+l
+cd javascript/
+l
+...
+l
+cd nisinoon/
+l
+cd website/
+l
+bat package.json
+help from
+cargo install --list
+help from
+...
+cd ttrpg/
+la
+git clone git@gitlab.com:olivier-grech/mythic-bastionland.git
+cd mythic-bastionland/
+l
+git status
+git remote --verbose 
+git fetch; git pull
+la
+..
+la
+mkdir fvtt
+help mv
+mv mythic-bastionland/ mythic-bastionland-GITLAB
+git clone git@github.com:maqloner/mythic-bastionland.git
+mv mythic-bastionland mythic-bastionland-GITHUB
+la
+mv Cairn-FoundryVTT/ fvtt/
+mv IntoTheOdd-FoundryVTT/ fvtt/
+mv electric-bastionland-FoundryVTT/ fvtt/
+mv mythic-bastionland-GIT* fvtt/
+l
+la oracle-server/
+mv foundryvtt-sphere/ oracle-server/
+la
+cd fvtt/
+enter ../oracle-server/
+p
+la
+cd Cairn-FoundryVTT/
+git fetch; git pull
+..
+cd IntoTheOdd-FoundryVTT/
+git fetch; git pull
+../electric-bastionland-FoundryVTT/
+git fetch; git pull
+..
+p
+la
+cd foundryvtt-sphere/
+git status 
+hx .gitignore
+la
+la .old-stuff/
+..
+p
+cd mythic-bastionland-GITHUB/
+la
+bat how-to-use-this-system.md
+hx how-to-use-this-system.md
+hx i18n-unused.config.js
+hx package.json
+hx README.md
+cd templates/
+la
+cd applications/
+la
+hx gm-dashboard.hbs
+cd sheet/
+la
+cd actor/
+la
+cd common/
+la
+hx actions.hbs
+la
+hx virtues.hbs
+...
+..
+la
+cd dialog/
+la
+hx roll-scar-dialog.hbs
+..
+la
+cd chat-message/
+l
+hx chat-message.hbs
+...
+l
+cd ui
+la
+../tokens/
+la
+la actors/
+../packs/
+la
+cd mythic-bastionland-core-rolltables/
+la
+hx 000097.ldb
+hx 000108.log
+hx LOG
+..
+la
+la mythic-bastionland-core-actors/
+..
+la
+cd module/
+la
+hx config.js
+hx mythic-bastionland.js
+cd actions/
+la
+hx actor-rest-action.js
+cd
+help plot
+help from yml
+gpg --armor --export-options export-minimal --export fingerprint
+gpg --armor --export-options export-minimal --export fingerprint...
+gpg --armor --export-options export-minimal --export
+gpg --help
+pgp -k
+gpg -k
+exit
+shutdown --help
+sudo shutdown -r now
+brew update; brew upgrade
+ls --all | sort-by date
+ls --all
+spotify_player 
+cd ~/.dotfiles/
+git status 
+ls
+bat README.md
+git fetch; git pull
+bat README.md
+la
+cd .config/nushell/completions/
+la
+http get https://github.com/nushell/nu_scripts/blob/main/custom-completions/scoop/scoop-completions.nu | save scoop-completions.nu
+hx scoop-completions.nu
+rm scoop-completions.nu
+http get https://raw.githubusercontent.com/nushell/nu_scripts/main/custom-completions/scoop/scoop-completions.nu | save scoop-scompletions.nu
+rm scoop-completions.nu
+mv scoop-scompletions.nu scoop-completions.nu
+hx scoop-completions.nu
+ls
+hx mod.nu
+..
+...
+git status
+git add --update
+git add --all
+git commit -m "Unify /completions/ across devices"
+git push
+ls
+..
+ls
+cd GitHub/
+ls
+git clone git@github.com:alexellis/actions-batch.git
+cd himalaya/
+git fetch; git pull
+git status 
+bat CHANGELOG.md
+himalaya --version
+cargo --list
+cargo install --list
+cargo search himalaya
+ls
+..
+ls
+which helix
+which hx
+cd helix/
+ls
+git fetch; git pull
+hx --version
+bat README.md
+ls
+bat CHANGELOG.md
+git fetch; git pull
+bat Cargo.toml
+..
+ls
+cd spotify-player/
+git fetch; git pull
+which spotify_player
+cargo install --list
+bat README.md
+ls
+..
+ls
+cd logic_programming_symln/
+ls
+cd I-DLV
+ls
+cd crepe
+..
+l
+..
+ls
+cd code-learning/
+ls
+cd ildafy/
+cargo check
+cd code-learning/ildafy/src/
+cargo check
+ls src/
+cargo check
+git add --update
+git commit -m "Squash compiler errors for DocumentEntry"
+hx src/main.rs
+cargo check
+git add --update
+git commit -m "Create compiler errors for DocumentEntry"
+cargo check
+git status
+cargo check
+git add --update
+git commit -m "scaffolding for the archive_entry vec"
+cargo check
+git add --update
+git commit -m "Continuing addition of fields"
+hx README.md
+git add --update
+git commit
+cargo check
+git add --update
+git commit -m "Progress on ArchiveEntry"
+psql
+^psql
+psql menominee_dict
+cargo check
+git add --update
+git commit -m "Added source query to Archive output"
+cargo check
+git add --update
+git commit -m "Add first draft archive output code"
+hx models.rs
+sudo shutdown -r now
+sudo shutdown -h now
+cd code-learning/ildafy/
+git status
+ls
+la
+cd code-learning/ildafy/
+git diff 
+ls
+git log
+hx CHANGELOG-serious.md
+bat README.md
+git add --update
+git commit -m "Update changelog and readme"
+hx README.md
+ls
+bat .gitignore
+cargo check
+exit
+hx src/ildafy_dictionary.rs
+cargo check
+git add --update
+git commit -m "Implement source (notes_1) for Archive"
+hx src/ildafy_dictionary.rs
+git add --update
+git commit -m "Scaffold Document retrieval function"
+hx src/ildafy_archive_document.rs
+exit
+git push
+git status
+git push
+cd code-learning/ildafy/
+git status
+exit
+git push
+hx README.md
+hx src/ildafy_archive_document.rs
+git add --update
+git commit -m "Fix readme typo & new .env file"
+git push
+ls
+cargo check
+rustup update
+brew update; brew upgrade
+yabai --restart-service
+which himalaya
+cargo install --list
+hx src/ildafy_archive_document.rs
+hx src/utils/paginator.rs
+hx src/utils/serialization.rs
+hx src/utils/logger.rs
+hx src/main.rs
+hx src/ildafy_dictionary.rs
+hx src/ildafy_archive_document.rs
+..
+ls
+cd myaamia-word-decomposition/
+ls
+cd logs/
+ls
+hx dlv2_time_memory_log.txt
+..
+hx scripts/dlv_run.sh
+hx dlv2-stem-parse-di-string.txt
+...
+ls
+bat rendle_quote_programmers.txt
+cd code-learning/
+ls
+la
+cd ildafy/
+la
+hx Cargo.toml
+git branch refactor_pagination
+git switch refactor_pagination
+opd --help
+opd rice
+cargo install --list
+cd ~/.cargo/bin/
+ls
+which himalaya
+..
+la
+hx .crates.toml
+cargo install nu --features="dataframe" --features="extra" --features="plugin"
+cargo search nu
+cargo search himalaya
+hx .crates2.json
+exit
+cd
+hx ~/.config/sketchybar/sketchybarrc
+brew services restart sketchybar
+hx ~/.config/sketchybar/sketchybarrc
+brew services restart sketchybar
+cd .config/himalaya/
+la
+hx config.toml
+cp config.toml release_config.toml
+hx release_config.toml
+exit
+brew update; brew upgrade
+brew services restart sketchybar
+cd code-learning/ildafy/
+git branch main
+git switch main
+git log
+git switch refactor_pagination
+git log 
+git switch main
+git log 
+hx CHANGELOG-serious.md
+git branch dictionary
+git switch dictionary; git log
+la
+cp .env ../2024-01-30-ildafy-env.txt
+bat .env
+cd code-learning/ildafy/
+git log
+hx CHANGELOG-serious.md
+..
+git revert 4f3438d417cb220f831cb7da8ac5ed2cd1bac71f
+git status
+git rm TODO.md
+git revert --continue
+git status
+la
+bat .env
+cd src/
+la
+hx main.rs
+git switch main
+git branch --delete dictionary
+git branch -D dictionary
+git branch dictionary
+git switch dictionary
+git status
+git reset --hard 4f3438d417cb220f831cb7da8ac5ed2cd1bac71f
+bat .env
+ls
+..
+bat .env
+cd src
+ls
+bat ildafy.rs
+cd ildafy/
+la
+bat CHANGELOG-serious.md
+rm CHANGELOG-serious.md; rm CHANGELOG.md; rm TODO.md
+la
+rm _scratch/
+rm --recursive _scratch/
+ls
+ls media/
+ls media/audio/
+rm --recursive media/
+ls
+rm --recursive data_format/
+rm --recursive target/
+la
+rm Cargo.lock
+hx ../Cargo.toml
+cargo check
+ls
+hx main.rs
+hx ildafy.rs
+hx models.rs
+hx db.rs
+hx main.rs
+hx error.rs
+..
+cargo check
+git status
+git add --all
+git commit
+git push
+git push --set-upstream origin dictionary
+la
+cargo run
+la
+help commands
+help from json
+bat dictionary.json
+help count
+open dictionary.json
+hx .gitignore
+git status
+..
+la
+mkdir ildafy_success
+mv 2024-01-30-ildafy-env.txt ildafy_success/
+mv ildafy/dictionary.json ildafy_success/
+exit
+hx src/ildafy.rs
+git log main
+git show dadf64351dda16e86325caec86478e5290dbe1ba
+git show bf3854ad40e810d76e7bc7dfd50cb9ce354b3b66
+git cherry-pick -n dadf64351dda16e86325caec86478e5290dbe1ba
+git status
+la
+la src
+bat src/ildafy_archive_document.rs
+add src/ildafy_archive_document.rs
+add ildafy_archive_document
+git add ildafy_archive_document
+git add src/ildafy_archive_document.rs
+bat src/ildafy.rs
+bat src/models.rs
+git status
+git restore --staged README.md
+git status
+git rm README.md
+la
+rm README.md
+git status
+git commit 
+git status
+git log
+git push
+git status
+git add --all
+git commit -m "delete unnecessary files"
+git push
+git status
+git log main
+git show 5db1b8a1bcbf2e5c1a23784753e02b8722e73362
+git cherry-pick -p 5db1b8a1bcbf2e5c1a23784753e02b8722e73362
+git cherry-pick --abort
+git cherry-pick -n 5db1b8a1bcbf2e5c1a23784753e02b8722e73362
+git status
+hx src/main.rs
+hx src/models.rs
+git status
+hx src/ildafy.rs
+hx src/ildafy_archive_document.rs
+hx src/main.rs
+git add src/main.rs
+git add src/models.rs
+git status
+git commit
+git push
+cd src/
+la
+hx main.rs
+hx ildafy_archive_document.rs
+mv ildafy_archive_document.rs ildafy_archive.rs
+hx ildafy_document.rs
+hx ildafy_archive.rs ildafy_document_duh.rs
+mv ildafy_archive.rs ildafy_document_duh.rs
+mv ildafy_document.rs ildafy_archive.rs
+mv ildafy_document_duh.rs ildafy_document.rs
+hx ildafy_document.rs
+hx ildafy_archive.rs
+spotify_player
+exit
+hx ildafy.rs ildafy_archive.rs ildafy_document.rs
+git status
+git add ildafy_archive.rs ildafy_document.rs
+git add --update
+git status
+git commit 
+git push
+..
+git status
+la
+bat menominee-migration.log
+hx src/main.rs
+cargo check 
+hx src/models.rs
+hx src/utils/serialization.rs
+brew leaves
+hx .scratch.md
+brew update; brew upgrade
+cd code-learning/languages/
+ls
+cd answer-set-programming/
+la
+cd datalog/
+ls
+cd I-DLV/
+la
+bat README.md
+cd _layouts/
+la
+..
+git status
+git branch
+..
+ls
+..
+ls
+cd crepe/
+ls
+cd src/
+ls
+..
+ls
+..
+cd myaamia-dlv/
+ls
+git status
+...
+ls
+..
+ls
+cd myaamia-word-decomposition/
+ls
+git status
+git remote --verbose 
+git remote get-url 
+git remote get-url origin
+..
+ls
+mkdir algonk_answer_sets
+mv myaamia-word-decomposition/ algonk_answer_sets/
+cd algonk_answer_sets/
+hx README.md
+cd ../languages/answer-set-programming/
+la
+cd myaamia-dlv/
+..
+mv myaamia-dlv/ ../../algonk_answer_sets/
+la
+cd potassco/
+la
+...
+cd ../algonk_answer_sets/
+la
+mkdir goddard_asp
+cd goddard_asp/
+hx README.md
+..
+bat README.md
+open README.md
+nuopen README.md
+nuopen goddard_asp/README.md
+spotify_player
+exit
+cd ../ildafy/
+ls
+cd src/
+ls
+..
+git switch refactor_pagination
+git status
+ls
+bat CHANGELOG-serious.md
+git switch dictionary
+git branch --delete refactor_pagination
+git branch --delete refactor_pagination -D
+git branch refactor
+git switch refactor
+ls
+cd src/
+ls
+..
+git switch dictionary
+git log
+history 
+history session
+git log
+git revert
+git show 5f1d4b8dfa14bf15dfd944594006b756ff929581
+git log
+git revert -n a26be8b8e0b07233d8f6d8669c1bad25d3a19867
+git status
+git log
+git revert -n 1737c0ddbcd4ad2a4a15f5a8a4b7402c1098cb37
+git status
+bat src/models.rs
+bat src/ildafy_archive_document.rs
+git log
+git revert -n 7569a04e61bdf9a6d659a1d909a7e55f81037df0
+git status
+git log
+git revert 44012a667d14254ce229b4fe90604b4f9e2912ae
+git revert -n 44012a667d14254ce229b4fe90604b4f9e2912ae
+git status
+cd code-learning/ildafy/
+git log
+git revert --continue
+ls src/
+ls
+rm target/
+rm --recursive target/
+rm LICENSE
+rm menominee-migration.log
+la
+cd src/
+la
+..
+git status
+git add --update
+git add --all
+git commit
+cargo check
+ls
+cargo run
+ls
+bat dictionary.json
+rm dictionary.json
+rm menominee-migration.log
+rm --recursive target/
+git add --update
+git status
+git commit
+git push
+git switch refactor
+git status
+git push --set-upstream origin refactor
+ls
+rm LICENSE
+cd src/
+ls
+cd code-learning/ildafy/
+git add --update
+git status
+git commit -m "partially implement Document (csv) output"
+git push
+cargo check
+git add --update
+git commit
+git push
+hx ildafy.rs ildafy_archive.rs ildafy_document.rs models.rs
+help find
+ls
+..
+git add --update
+git commit
+git push
+git switch main
+git branch old_main
+git branch
+git switch old_main
+git log
+git switch main
+git log
+git switch dictionary
+git log
+git branch refactor
+git switch refactor
+git status 
+cargo check
+opd find
+opd components --contains mik
+cd src/
+ls
+hx error.rs
+git log
+git status
+hx changelog-refactored_branch.md
+mv changelog-refactored_branch.md CHANGELOG-refactor_branch.md
+git add --all
+hx README.md
+git commit -m "Documentat ongoing work on the refactor branch"
+git push
+git switch old_main
+git add --all
+git log
+git commit --amend 
+git push
+git add --all
+git commit
+git status
+git push --dry-run 
+git push --verbose 
+git pull
+exit
+git status
+git log
+git status --branch --verbose 
+git status --verbose 
+git status
+git status branch
+git push origin --force refactor
+git status
+git fetch; git pull
+git log
+ls
+cargo check
+ls src/
+cargo build 
+cd src/
+cd code-learning/ildafy/
+cd code-learning/ildafy/src/
+cargo check
+hx db.rs error.rs ildafy.rs ildafy_archive.rs ildafy_document.rs main.rs models.rs utils/serialization.rs
+cd utils/
+hx clean.rs
+hx mod.rs
+rm clean.rs
+ls
+hx logger.rs
+hx serialization.rs
+..
+ls
+hx main.rs
+..
+git add --update
+git add --all
+git commit
+git push
+hx src/error.rs
+git switch main
+hx README.md
+ls
+git log
+git switch dictionary
+git status 
+git restore README.md
+git status
+git switch dictionary
+ls
+la
+bat README.md
+hx README.md
+ls
+git log
+ls
+hx CHANGELOG.md
+la
+cargo run
+la
+bat menominee-migration.log
+bat dictionary.json
+hx .gitignore
+rm menominee-migration.log
+rm dictionary.json
+hx CHANGELOG.md
+hx Cargo.toml
+git add --all
+git commit -m "Semi-reasonable public-facing, working version"
+git push
+git switch main
+git log
+git branch --move old_main main_20240125
+git switch main_20240125
+git status
+git push --set-upstream origin main_20240125
+git switch main
+git reset --hard dictionary
+la
+hx .gitignore
+git push --force origin main
+git switch refactor
+hx Cargo.toml
+git status
+git add --update
+hx CHANGELOG-refactor_branch.md
+git add --update
+git commit -m "Update Cargo.toml to reflect new versioning logic"
+cd code-learning/ildafy/
+cd src/
+la
+la utils/
+cargo check
+hx Cargo.toml
+cargo check
+hx CHANGELOG-refactor_branch.md
+git add --update
+git add --all
+git commit
+git push
+git log
+git status
+git add --update
+cargo check
+hx CHANGELOG-refactor_branch.md
+git add --update
+git commit
+git push
+cargo check
+cargo run
+la
+bat menominee-migration.log
+help tail
+help commands 
+hx error.rs
+hx ../CHANGELOG-refactor_branch.md
+bat menominee-migration.log
+hx src/ildafy_archive.rs
+hx src/ildafy_document.rs
+hx tests/test_data/
+hx tests/db_tests.rs
+hx src/main.rs
+hx ../README.md
+hx ../CHANGELOG-refactor_branch.md
+git status
+la
+rm dictionary.json
+rm menominee-migration.log
+cargo run
+la
+bat menominee-migration.log
+hx ../README.md
+hx main.rs
+..
+la
+rm dictionary.json
+rm menominee-migration.log
+hx Cargo.toml
+git add --update
+git add --all
+git commit
+git push
+bat CHANGELOG-refactor_branch.md
+exit
+bat README.md
+hx README.md
+hx .env
+ls
+cargo run
+ls
+open document.csv
+nuopen document.csv
+bat menominee-migration.log
+tail menominee-migration.log | bat
+hx CHANGELOG-refactor_branch.md
+git status 
+ls
+rm document.csv
+rm dictionary.json
+rm menominee-migration.log
+git status
+hx CHANGELOG-refactor_branch.md
+git add --update
+git commit -m "Cleanup & document after successful csv output"
+git push
+..
+ls
+la
+cd algonk_answer_sets/
+la
+mkdir phon
+cd phon/
+enter ../../languages/answer-set-programming/mtgs/20231207di/
+la
+bat TODO.txt
+shells
+shells
+cd code-learning/algonk_answer_sets/phon/
+help shells
+help show
+la
+cd `lockwoht@miamioh.edu - Google Drive/My Drive/digital linguistics comp ling/dlv-myaamia/`
+la
+cd code-learning/algonk_answer_sets/myaamia-dlv/
+la
+git status
+git remote get-url origin
+la
+hx README.md
+la
+l
+hx 20231110-dlv-stem-parse-di.txt
+cd di-files/
+la
+cd 20231110di/
+la
+..
+la
+..
+l
+exit
+la reading/
+la
+hx soundchange-notes.md
+cd `~/Obsidian Vaults/Professionalia/Thinking Machines/Code/DLV/DLV-MANUAL/`
+la
+hx useful_predicates.txt
+la
+hx datalog-facts.txt
+hx output1.txt
+hx secondary_decomposition.txt
+..
+la
+cd 20231102/
+la
+bat README.md
+nuopen 11_02_2023.zip
+la
+help commands
+unzip 11_02_2023.zip
+la
+hx 202311-dlv-stem-parse-di.txt
+hx input.txt
+..
+la
+cd 20231026/
+la
+...
+la
+cd potassco/
+la
+exit
+cd code-learning/algonk_answer_sets/myaamia-dlv/di-files/20231110di/
+la
+cd `~/lockwoht@miamioh.edu - Google Drive/My Drive/digital linguistics comp ling/`
+la
+cd dlv-myaamia/
+la
+cd coding/
+la
+cd 20231207di/
+la
+hx useful_predicates.txt
+cd
+cd code-learning/languages/
+cd answer-set-programming/
+la
+cd mtgs/
+la
+cd 20231207di/
+la
+hx secondary_decomposition.txt
+..
+cd 20231012/
+la
+cd `Other tests/`
+la
+hx input-complex.txt
+hx 202309-dlv-stem-parse-di-complex.txt
+..
+cd 20231026/
+la
+..
+cd 20231102/
+la
+hx input.txt
+hx `Chapter 2 Core Language Disjunctive Datalog.md`
+hx 202311-dlv-stem-parse-di.txt
+../20231207di/
+cd code-learning/algonk_answer_sets/phon/
+la
+dlv segments.lp
+dlv -silent
+hx README.md
+shells
+enter ../
+shells
+mkdir infl
+cd infl
+hx README.md
+p
+ls
+hx segments.lp
+exit
+hx segments.lp
+hx useful_predicates.txt
+...
+..
+la
+..
+cd algonk_answer_sets/
+la
+cd phon/
+la
+dlv segments.lp
+dlv -brave segments.lp
+dlv -cautious segments.lp
+dlv -cautious segments.lp -silent
+dlv -cautious segments.lp -silent | lines
+dlv -cautious segments.lp -silent | lines | split row 
+dlv -cautious segments.lp -silent | split
+help split
+help lines
+dlv -cautious segments.lp -silent | table
+dlv -cautious segments.lp -silent | lines
+dlv -cautious segments.lp -silent
+dlv2 segments.lp
+dlv2 -cautious segments.lp -silent
+dlv2 segments.lp -silent
+dlv2 segments.lp
+dlv2 --help
+dlv2 segments.lp
+dlv -cautious segments.lp -silent
+nuopen README.md
+hx README.md
+shells
+../infl/
+shells
+p
+la
+exit
+hx `Chapter 4 Queries.md`
+exit
+hx vai_dep.lp
+cd code-learning/algonk_answer_sets/infl/
+dlv vai_dep.lp
+dlv vai_dep.lp -silent -pfilter=word
+dlv vai_dep.lp -filter=word
+dlv vai_dep.lp
+dlv vai_dep.lp -brave
+dlv vai_dep.lp -cautious
+dlv vai_dep.lp -cautious -silent
+dlv vai_dep.lp
+dlv vai_dep.lp -brave
+dlv vai_dep.lp
+dlv vai_dep.lp -pfilter=word
+dlv vai_dep.lp -filter=word
+dlv vai_dep.lp
+dlv vai_dep.lp -filter=word
+nuopen ../myaamia-dlv/dlv2-thoughts/dlv2-test.txt
+nuopen ../myaamia-dlv/dlv2-thoughts/datalog-facts.txt
+nuopen ../myaamia-dlv/dlv2-thoughts/20231110-dlv-stem-parse-di.txt
+nuopen ../myaamia-dlv/dlv2-thoughts/dlv2-test.txt
+dlv2 vai_dep_dlv2.lp
+dlv2 vai_dep_dlv2.lp -silent
+dlv vai_dep.lp -filter=word
+dlv2 vai_dep_dlv2.lp -filter=word
+dlv2 vai_dep_dlv2.lp --silent --filter=word
+dlv2 vai_dep_dlv2.lp --silent --no-facts
+dlv vai_dep.lp -nofacts
+dlv vai_dep.lp -nofacts -silent
+dlv2 vai_dep_dlv2.lp --silent --no-facts
+la
+shells
+cd `~/lockwoht@miamioh.edu - Google Drive/My Drive/digital linguistics comp ling/`
+la
+cd dlv-myaamia/
+la
+hx CHANGELOG.md
+la
+hx TODO.md
+cd coding/
+la
+mkdir 20240205hl
+cd 20240205hl/
+cp --recursive ~/code-learning/algonk_answer_sets/infl .
+la
+ls infl/
+../phon/
+la
+bat segments.lp
+bat README.md
+cp --recursive ~/code-learning/algonk_answer_sets/phon/ .
+hx README.md
+la
+..
+la
+cd goddard_asp/
+la
+bat README.md
+..
+la
+exit
+exit
+cd personal-information-management/eml/
+spotify_player
+cd code-learning/algonk_answer_sets/infl/
+la
+hx README.md vai_dep_dlv2.lp vai_dep.lp
+dlv2 vai_dep_dlv2.lp --silent --no-facts
+exit
+hx manitowabi.eml
+shells
+enter ~/code-learning/
+shells
+la
+p
+la
+hx manitowabi.eml
+rm manitowabi.eml
+p
+shells
+exit
+sudo shutdown -r now
+brew update; brew upgrade
+cd code-learning/algonk_answer_sets/infl/
+la
+hx vai_dep.lp
+hx README.md ai_infl_data.lp
+sudo shutdown -r now
+cd code-learning/algonk_answer_sets/infl/
+la
+hx README.md ai_infl_data.lp
+..
+la
+cd goddard_asp/
+la
+hx README.md
+hx goddard1990.lp
+..
+la
+hx phon/
+cd phon/
+dlv segments.lp
+hx segments.lp
+dlv segments.lp
+hx segments.lp
+dlv segments.lp
+dlv segments.lp -filter=long_vowel
+hx segments.lp
+dlv segments.lp --silent --no-facts
+dlv segments.lp -silent -no-facts
+dlv -silent -no-faccts segments.lp
+dlv -silent -no-facts segments.lp
+dlv -silent segments.lp
+dlv -silent -cautious segments.lp
+hx segments.lp
+dlv -silent -cautious segments.lp
+hx segments.lp
+hx README.md
+...
+la
+cd ../myaamia-center/
+la
+hx word_projects_assorted
+cd code-learning/algonk_answer_sets/infl/
+enter ../phon/
+p
+la
+hx README.md ai_infl_data.lp vai_dep.lp vai_dep_dlv2.lp
+fzf
+p
+enter ~
+fzf
+p
+cp ~/code-learning/languages/answer-set-programming/mtgs/20231207di/useful_predicates.txt .
+hx README.md ai_infl_data.lp vai_dep.lp vai_dep_dlv2.lp useful_predicates.txt
+la
+p
+hx ../phon/useful_predicates.txt README.md vai_dep.lp
+la
+hx ii_infl_data.lp
+hx word_projects_assorted/intentionality.md
+shells
+cd
+shells
+exit
+exit
+cd code-learning/ildafy/
+..
+rustup update
+cargo --list
+cargo install --list 
+brew search nu
+cargo install-update --list 
+cargo install taplo-cli --locked --features lsp
+cargo install nu --features="dataframe" --features="extra" --features="plugin"
+which helix
+which hx
+cargo install --list 
+fzf
+hx personal-information-management/identity/matrix-security-key.txt
+la
+cd code-learning/
+cd algonk_answer_sets/phon/
+hx segments.lp
+../infl/
+la
+hx ai_infl_data.lp
+hx vai_dep.lp vai_dep_dlv2.lp --hsplit
+../../languages/
+cd answer-set-programming/potassco/
+la
+cd guide/
+git fetch
+git status
+git pull
+make
+la
+which latexmk
+which tlmgr
+brew leaves
+hx guide.tex
+texlab --help
+pandoc --help
+which pandoc
+zsh
+la
+hx gringo3.tex
+hx configuration.tex
+cd examples/
+la
+unzip ricochet_robots.lp.gz
+gunzip ricochet_robots.lp.gz
+la
+hx ricochet_robots.lp
+hx psign.lp
+hx world0.lp
+hx sfly.lp
+hx unify.lp
+hx symbc.lp
+hx term.lp
+hx toh_enc.lp
+hx showa.lp
+hx showt.lp
+hx lp1.lp
+hx lp2.lp
+hx flynn.lp
+hx base.lp
+hx shop.lp
+hx part.lp
+hx part-py.lp
+hx ext.lp
+hx less-cardinality.lp
+hx bird.lp
+hx dl1.lp
+hx dl2.lp
+hx dl3.lp
+hx bw.lp
+hx basic.lp
+hx arithf.lp
+hx aggr.lp
+hx arithc.lp
+hx c1.lp
+hx color.lp
+hx cond.lp
+hx dl3.lp
+hx gcd-lua.lp
+hx nsign.lp
+hx pareto.lp
+hx subset.lp
+hx preference9.lp
+hx graph.lp
+..
+la
+cd ezasp/
+la
+bat README.md
+hx motivation.tex
+hx recursion.tex
+hx combined.tex
+hx example1.tex
+la
+hx whatisleft.tex
+hx traveling.tex
+hx negative.tex
+..
+la
+hx systems/
+la
+cd systems/
+la
+hx list.org
+..
+la
+cd clingo/
+la
+git fetch 
+git pull
+...
+la
+cd crepe/
+git fetch 
+git pull
+la
+hx Cargo.toml
+hx benches/graph_walking.rs
+la
+la benches/
+hx benches/collatz.rs
+hx benches/fibonacci.rs
+ls
+cd src/
+la
+hx lib.rs
+hx strata.rs
+hx parse.rs
+..
+la
+cd tests/
+la
+la ui
+hx test_disaggregate.rs
+..
+la
+..
+la
+cd datalog/
+la
+..
+la
+cd prolog/
+la
+cd scryer-prolog/
+la
+git fetch 
+git pull
+which scryer-prolog
+hx README.md
+..
+la
+..
+la
+cd rust/
+la
+cd
+cd code-learning/
+la
+cd algonk_answer_sets/
+la
+cd goddard_asp/
+la
+hx goddard1990.lp
+...
+la
+cd nisinoon/
+la
+bat README.md
+git submodule update --remote
+la
+git status
+..
+la
+fzf
+cd .dusty_corner/
+la
+cd ildalog/
+la
+bat README.md
+bat Cargo.toml
+..
+cd algonk_answer_sets/
+mkdir rusty
+la
+cd rusty
+la
+mkdir crepey
+cd crepey/
+la
+cargo init --name ildalog
+cargo init . --name ildalog
+la
+hx Cargo.toml
+cargo add crepe
+hx Cargo.toml
+la
+cd src/
+la
+hx main.rs
+..
+cargo init clingonquian
+la
+cd clingonquian/
+la
+cargo add clingo
+cargo add clingo --features="clingo-derive,derive,static-linking"
+cargo add clingo --features=clingo-derive
+cargo add clingo --features 
+cargo add clingo --features derive
+cargo add clingo --features static-linking
+shells
+enter ~/code-learning/
+cd languages/answer-set-programming/
+cd potassco/
+la
+la clingo/
+git clone git@github.com:potassco/clingo-rs.git
+la
+cd clingo-rs/
+cd examples/
+la
+hx model.rs
+hx
+la
+hx
+hx inject-terms.rs
+hx control.rs
+hx propagator.rs
+hx solve-async.rs
+hx ast.rs
+la
+n
+la
+hx src/main.rs
+which clingo
+la
+hx README.md
+p
+..
+cargo run --example=ast 0
+which clingo
+which clingo; pbcopy
+pbcopy; which clingo
+$env.CLINGO_LIBRARY_PATH = '/opt/homebrew/bin/clingo'
+cargo run --example=ast 0
+cargo run --example=version
+which clingo
+$env.CLINGO_LIBRARY_PATH = /opt/homebrew/bin/clingo
+cargo run --example=version
+la
+rm --recursive target/
+$env.CLINGO_LIBRARY_PATH = /opt/homebrew/bin/
+cargo run --example=version
+clingo
+$env.LD_LIBRARY_PATH = /opt/homebrew/bin/
+cargo run --example=version
+la
+p
+la
+exit
+la
+l
+cd GitHub/
+l
+..
+cd code-learning/
+la
+cd ildafy/
+git status
+hx CHANGELOG-refactor_branch.md
+hx src/ildafy_archive.rs
+la
+..
+la
+cd algonk_answer_sets/
+la
+shells
+la
+cd rusty/
+la
+cargo init algonquiascent
+la
+cd algonquiascent/
+cargo add ascent
+hx Cargo.toml
+hx src/main.rs
+hx README.md src/main.rs
+hx src/main.rs
+la
+hx README.md
+shells
+..
+la
+..
+la
+cd datasets/
+la
+..
+l
+cd languages/
+la
+cd nushell/
+la
+cd awesome-nu/
+git fetch; git pull
+hx README.md
+hx plugin_details.md
+la
+hx config.yaml
+git log
+la
+bat README.md
+hx plugin_details.md
+..
+la
+cd plugins/
+la
+cd nu_plugin_plot/
+git fetch; git pull
+..
+cd nu_plugin_str_similarity/
+git fetch; git pull
+la
+git status
+git stash Cargo.lock
+git stash list 
+git restore Cargo.toml
+git fetch; git pull
+git restore Cargo.lock
+git fetch; git pull
+git log
+..
+la
+cd nu_plugin_units/
+git fetch; git pull
+la
+..
+la
+la experimentation/
+cd experimentation/daily_tracker/
+la
+hx workday_template.md
+la
+hx README.md
+la
+hx workday_template.md
+hx workday_template.md header_template.md --hsplit
+..
+la
+cd ilda_process/
+la
+..
+rm --recursive ilda_process/
+la
+...
+la
+which scryer-prolog
+cd prolog/
+la
+cd scryer-prolog/
+la
+git fetch; git pull
+hx README.md
+cargo build --release 
+which scryer-prolog
+rm ~/bin/scryer-prolog
+mv target/release/scryer-prolog ~/bin/
+which scryer-prolog
+la
+mdcat README.md
+..
+la
+..
+la
+la rust/
+la prompt-engineering/
+cd prompt-engineering/
+unzip 2024-02-01_CHATGPT-EXPORT.zip
+la
+help mv
+la
+la gpt/
+mkdir gpt/2024-02-01_CHATGPT-EXPORT
+rm user.json
+rm *.json
+rm chat.html
+la
+mv 2024-02-01_CHATGPT-EXPORT.zip gpt/2024-02-01_CHATGPT-EXPORT/
+cd gpt/2024-02-01_CHATGPT-EXPORT/
+unzip 2024-02-01_CHATGPT-EXPORT.zip
+rm 2024-02-01_CHATGPT-EXPORT.zip
+hx message_feedback.json
+hx model_comparisons.json
+nuopen conversations.json
+hx conversations.json
+bat conversations.json
+la
+..
+la
+..
+la
+bat README.md
+cd bard/
+la
+hx asking-bard.md
+hx wow-addons.md
+..
+la
+cd rust/
+la
+git status
+...
+la
+la embedded/
+la ildafy/
+la nisinoon/
+la
+la datasets/algonquian
+la datasets/algonquian/myaamia/
+la datasets/onto/
+cd datasets/onto/
+mkdir gold_archive
+cd gold_archive/
+mv ../gold.zip .
+unzip gold.zip
+bat README.txt
+la
+hx gold-2010.owl
+hx gold-2010.xml
+..
+la
+..
+la
+cd languages/
+la
+brew install mercury
+mkdir mercury
+la
+cd mercury/
+hx README.md
+..
+la
+mercury --help
+l
+la python/
+cd python/
+la
+cd nltk-stuff/
+la
+cd grammars/
+la
+cd book_grammars/
+la
+bat background.fol
+hx storage.fcfg
+bat discourse.fcfg
+..
+la
+..
+la
+l help/
+l help/tagsets/
+la corpora/abc/
+la corpora/
+l
+cd taggers/
+la
+...
+l
+..
+l
+l python/
+l python/stringsplitter/
+l javascript/
+..
+la
+la algonk_answer_sets/
+cd languages/nushell/
+l
+enter experimentation/
+la
+cd daily_tracker/
+l
+mkdir template_drafts
+mv *.md template_drafts/
+l
+la
+mv template_drafts/README.md .
+la
+bat README.md
+hx README.md
+dfr help
+help dfr
+la
+help dfr
+hx script_drafts/dataframed.nu
+rm script_drafts/dataframed.nu
+cd ~/code-learning/algonk_answer_sets/infl/
+cd code-learning/algonk_answer_sets/infl/
+la
+bat README.md
+la
+hx ai_infl_data.lp
+mkdir experimentation
+mv *.lp experimentation/
+la
+mkdir vti; cd vti
+la
+bat README.md
+mv README.md experimentation/
+la
+enter ~
+shells
+la
+cd Documents/Drafts/
+la
+la community-blog/
+cd community-blog/
+l
+hx drafting-ai-post.md
+shells
+exit
+hx README.md
+la
+hx README.md
+la
+..
+git status
+git init
+la
+hx README.md
+cd myaamia-dlv/
+git status
+la
+bat README.md
+..
+la
+rm --recursive .git
+la
+shells
+n
+cd ~/.config/alacritty
+hx alacritty.toml
+hx ../starship.toml
+exit
+cd code-learning/algonk_answer_sets/infl/
+la
+hx notation.md
+..
+la
+cd myaamia-dlv/
+la
+cd ~/Documents/Drafts/COMPUTEL7/
+la
+mv *.docx DraftDocs/
+mv final-abstract.pdf DraftDocs/
+mv acl2023.zip DraftDocs/
+rm acl2023/ --recursive 
+la
+l DraftDocs/
+hx delving_into_datalog-reviews.md
+mv delving_into_datalog-reviews.md delving_into_datalog-reviews.eml
+la
+hx delving_into_datalog-reviews.eml
+shells
+...
+cd ../code-learning/algonk_answer_sets/infl/
+la
+..
+mv infl/notation.md .
+la
+hx notation.md
+hx README.md
+la
+cd myaamia-word-decomposition/
+git status
+..
+git init
+git status
+git add --all
+git status
+cd rusty/algonquiascent/
+la
+git status
+git remote get-url origin
+git remote
+la
+rm --recursive .git
+rm .gitignore
+la
+..
+la
+..
+la
+rm --recursive .git
+mkdir asp_for_ldc
+la
+mv infl/ asp_for_ldc/
+mv phon/ asp_for_ldc/
+mv notation.md asp_for_ldc/
+la
+mv goddard_asp/ asp_for_ldc/
+cd asp_for_ldc/
+la
+mv goddard_asp/ goddard_1990
+la
+la goddard_1990/
+la
+hx notation.md
+la
+hx README.md
+sudo shutdown -h now
+la
+cd code-learning/algonk_answer_sets/asp_for_ldc/
+la
+hx README.md
+git init
+la
+hx README.md
+git add --all
+git commit
+l
+hx goddard_1990/README.md
+git add --update
+git commit -m "Expanding some notes on Goddard 1990"
+git push
+..
+la
+shells
+enter ../ildafy/
+la
+git status
+hx CHANGELOG-refactor_branch.md
+cd src/
+la
+la utils/
+hx
+..
+cargo check
+la
+cargo check
+hx src/main.rs
+cargo check
+cargo run
+la
+bat menominee-migration.log
+hx .env
+la
+rm menominee-migration.log
+cargo run
+hx menominee-migration.log
+bat menominee-migration.log
+hx .env
+cd
+brew install --cask wezterm
+brew update; brew upgrade
+exit
+which hx
+help
+wezterm --help
+cd .config/
+la
+hx wezterm/wezterm.lua
+exit
+hx .config/wezterm/wezterm.lua
+cd .config/
+hx alacritty/alacritty.toml
+hx .config/wezterm/wezterm.lua
+hx alacritty/alacritty.toml
+la
+hx
+hx alacritty/alacritty.toml
+hx
+la
+cd alacritty/
+la
+cd catppuccin/
+git fetch; git pull
+la
+hx
+bat README.md
+hx ~/.zshrc
+...
+hx helix/config.toml
+hx
+hx starship.toml
+clear
+hx
+git status
+la
+config env
+config nu
+la
+config nu
+exit
+la
+ls
+config nu
+exit
+la
+ls
+config nu
+ls
+exit
+ls
+la
+config nu
+la
+config nu
+cd .config/wezterm/
+l
+config nu
+hx wezterm.lua
+hx ../helix/config.toml
+la
+..
+la
+ls
+..
+la
+cd code-learning/
+la
+enter ~/.config/
+bat alacritty/alacritty.toml
+clear
+config nu
+clear
+hx
+hx wezterm.lua
+ls
+la
+brew services restart sketchybar
+la
+$env
+exit
+ls
+$env.LS_COLORS
+dircolors
+$env.LS_OPTIONS
+brew services yabai --restarte
+brew services yabai --restart
+yabai --restart-service
+spotify_player
+which spotify-player/
+../bin/
+la
+cargo list
+cargo --list
+cargo install --list 
+which cargo
+cargo
+la
+dlv
+$env.PATH
+rustup
+which cargo
+which brew
+brew leaves
+$env.PATH
+rustup 
+which cargo
+exit
+which cargo
+which rustup
+$env.PATH
+$env.PATH
+ls
+exit
+exit
+exit
+rustup
+cargo
+cargo install --list 
+$env.PATH
+rustup
+cargo
+cargo install --list 
+exit
+exit
+hx code-learning/algonk_answer_sets/asp_for_ldc/notation.md
+cd `Obsidian Vaults/Professionalia/`
+ls
+mount smb://storage.miamioh.edu/MyaamiaCenter/Data Archive/Digital Surrogates/Language Documents
+cd /
+la
+cd Volumes/
+la
+cd `Language Documents/`
+la
+du
+cd `APS Scans/`
+la
+cd Heckewelder/
+la
+hx `MC Digital Surrogates Check.md`
+cd ~/myaamia-center/
+cd digital_surrogate_equivalence/
+cd StorageMiamiOH/
+la
+rm *.txt
+la
+zsh
+exit
+hx README.md
+la
+bat list_files_recursive.txt
+..
+la
+bat list_files_recursive.txt
+bat StorageMiamiOH/list_files_recursive.txt
+exit
+cd code-learning/algonk_answer_sets/asp_for_ldc/
+la
+la
+l
+cd GitHub/
+la
+cd helix/
+which helix
+which hx
+git status
+git fetch; git pull
+bat CHANGELOG.md
+git diff
+la
+git log
+..
+la
+cd spotify-player/
+git status
+git fetch; git pull
+../logic_programming_symln/
+la
+cd potassco
+cd crepe
+rm *
+la
+touch TODO
+..
+la
+cd himalaya/
+git fetch; git pull
+bat CHANGELOG.md
+..
+la
+cd actions-batch/
+git fetch; git pull
+l
+hx README.md
+cd examples/
+la
+hx fetch-hosts.sh
+hx curl.sh
+hx llama.sh
+cd
+ls
+cd personal-information-management/
+la
+hx notation.md
+la
+cd phon/
+la
+hx README.md
+la
+bat useful_predicates.txt
+bat segments.lp
+hx segments.lp
+..
+cd infl/
+la
+cd vti/
+la
+cd ~/code-learning/algonk_answer_sets/infl/
+cd ~/code-learning/algonk_answer_sets/asp_for_ldc/infl/vti/
+la
+hx README.md
+exit
+hx vti_dep.lp
+..
+git add --update
+git add --all
+git commit -m "VTI thoughts coming together"
+spotify_player
+exit
+sudo shutdown -h now
+cd ~/code-learning/algonk_answer_sets/asp_for_ldc/infl/vti/
+la
+hx vti_dep.lp
+git add --update
+git commit
+...
+la
+bat README.md
+la infl
+la infl/experimentation/
+..
+la
+..
+cd ildafy/
+la
+hx README.md
+hx src/models.rs
+rm menominee-migration.log
+git add --update
+git commit
+git push
+git branch archive
+git switch archive
+la
+hx CHANGELOG-refactor_branch.md
+mv CHANGELOG-refactor_branch.md CHANGELOG-archive_branch.md
+hx CHANGELOG-archive_branch.md
+hx README.md
+cargo run
+cd src/
+exit
+hx ildafy_archive.rs
+..
+cargo check
+cargo run
+la
+tail menominee-migration.log | bat
+psql menominee_dict
+exit
+hx .env
+rm menominee-migration.log
+git status
+hx src/ildafy_archive.rs
+la
+cargo run
+tail menominee-migration.log | bat
+hx .env
+hx src/models.rs
+hx src/ildafy_*
+hx src/models.rs
+cd src
+hx
+git add --update
+git commit
+git push
+git push --set-upstream origin archive
+git status
+git add --all
+git commit -m "meta/changelog"
+git push
+git status
+la
+config nu
+la
+..
+la
+tail menominee-migration.log | bat
+psql menominee_dict
+rm menominee-migration.log
+la
+cargo run
+tail menominee-migration.log | bat
+rm menominee-migration.log
+cargo run
+la
+explore archive.json
+explore archive.json --head 
+help explore
+nuopen archive.json | explore 
+git add --update
+git commit -m "SQL fixes and plan alterations"
+git push
+l
+nuopen dictionary.json | explore
+la
+nuopen menominee-migration.log | explore
+tail menominee-migration.log | bat
+hx CHANGELOG-archive_branch.md
+git add --update
+git commit
+git push
+l
+exit
+la
+la
+hx main.rs
+la
+..
+la
+bat menominee-migration.log
+bat archive.json
+bat document.csv
+bat dictionary.json
+hx src/ildafy.rs
+..
+la
+exit
+...
+la
+cd languages/php/
+whichi php
+which php
+cd ../../languages/php/
+la
+hx phreaking-hello-phworld.php
+rm phreaking-hello-phworld.php
+which composer
+la /bin/cat
+la /bin/
+php --version
+which php
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"<\n>php -r "if (hash_file('sha384', 'composer-setup.php') === 'edb40769019ccf227279e3bdd1f5b2e9950eb000c3233ee85148944e555d97be3ea4f40c3c2fe73b22f875385f6a5155') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"<\n>php composer-setup.php --install-dir=bin<\n>php -r "unlink('composer-setup.php');"
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"<\n>php -r "if (hash_file('sha384', 'composer-setup.php') === 'edb40769019ccf227279e3bdd1f5b2e9950eb000c3233ee85148944e555d97be3ea4f40c3c2fe73b22f875385f6a5155') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"<\n>php composer-setup.php --install-dir=/bin<\n>php -r "unlink('composer-setup.php');"
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"<\n>php -r "if (hash_file('sha384', 'composer-setup.php') === 'edb40769019ccf227279e3bdd1f5b2e9950eb000c3233ee85148944e555d97be3ea4f40c3c2fe73b22f875385f6a5155') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"<\n>php composer-setup.php --install-dir=~/bin<\n>php -r "unlink('composer-setup.php');"
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"<\n>php -r "if (hash_file('sha384', 'composer-setup.php') === 'edb40769019ccf227279e3bdd1f5b2e9950eb000c3233ee85148944e555d97be3ea4f40c3c2fe73b22f875385f6a5155') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"<\n>php composer-setup.php --install-dir=/Users/hunterlockwood/bin<\n>php -r "unlink('composer-setup.php');"
+hx
+composer create-project laravel/laravel phpilot_project
+mv ~/bin/composer.phar ~/bin/composer
+composer create-project laravel/laravel phpilot_project
+cd phpilot_project/
+la
+hx README.md
+exit
+la
+hx README.md
+mkdir laravel_bootcamp
+hx README.md
+cd laravel_bootcamp/
+hx README.md
+composer create-project laravel/laravel chirper
+php artisan serve
+cd chirper/
+php artisan serve
+hx .env
+composer require laravel/breeze --dev
+php artisan breeze:install blade
+exit
+php artisan migrate
+la
+bat README.md
+hx ../README.md
+php artisan serve
+npm run dev
+exit
+exit
+la
+hx README.md
+hx phpunit.xml
+hx database/database.sqlite
+hx composer.json
+hx artisan
+hx public/index.php
+..
+la
+hx joy
+la mercury/
+bat mercury/README.md
+mkdir opml
+cd opml/
+hx README.md
+hx SAMPLE_FEED.opml
+la
+hx SAMPLE_XSL.xsl
+mv SAMPLE_XSL.xsl SAMPLE_XSL.xslt
+la
+hx SAMPLE_XSL.xslt
+mv SAMPLE_XSL.xslt SAMPLE_XSL.xsl
+la
+..
+la
+hx opml/README.md
+sudo shutdown -h now
+cd code-learning/
+brew update; brew upgrade
+la
+la .dusty_corner/
+cd algonk_answer_sets/
+asp_for_ldc/
+la
+git remote get-url origin
+hx notation.md
+enter ~/.config/
+la
+hx wezterm/wezterm.lua
+bat ../.zsh_history
+bat nushell/history.txt
+$env.COLORTERM
+la
+hx starship.toml
+la
+hx starship.toml
+hx wezterm/wezterm.lua
+hx helix/config.toml
+hx nushell/config.nu nushell/env.nu
+la
+nuopen starship.toml | explore
+fast-theme XDG:catppuccin-latte
+zsh
+l
+ls
+hx nushell/env.nu
+la
+exit
+opd components --contains dib
+la
+ls
+exit
+ls
+exit
+ls
+la
+exit
+nuopen starship.toml | explore
+exit
+nuopen starship.toml | explore
+help
+fzf
+exit
+hx nushell/config.nu nushell/env.nu
+shells
+cd ../GitHub/
+la
+..
+la
+cd .dotfiles/
+la
+git status
+cd ~/.config/
+la ../.zs
+la ../
+la
+cd .config/
+la
+bat ../README.md
+hx ../README.md
+cp ../../.config/starship.toml .
+cp --recursive ../../.config/wezterm/ .
+cp --recursive ../../.config/nushell/ .
+la
+rm --recursive nushell/
+cp --recursive ../../.config/wezterm/ .
+hx ../../.config/bat/config
+hx himalaya/config.toml
+hx ../README.md
+..
+git add --update
+git add --all
+git commit
+la
+cd .config/
+la

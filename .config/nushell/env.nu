@@ -6,6 +6,8 @@
 ###### (but really only formats, query are essential)
 # I use the following features at compile time (in case I forget during an upgrade)
 ### dataframe, extra, plugin
+#######################################
+# most prompt stuff overwritten by starship
 
 
 def create_left_prompt [] {
@@ -68,7 +70,7 @@ $env.PROMPT_MULTILINE_INDICATOR = {|| "::: " }
 # This can be useful if you have a 2-line prompt and it's taking up a lot of space
 # because every command entered takes up 2 lines instead of 1. You can then uncomment
 # the line below so that previously entered commands show with a single `🚀`.
-# $env.TRANSIENT_PROMPT_COMMAND = {|| "🚀 " }
+$env.TRANSIENT_PROMPT_COMMAND = {|| "  " }
 # $env.TRANSIENT_PROMPT_INDICATOR = {|| "" }
 # $env.TRANSIENT_PROMPT_INDICATOR_VI_INSERT = {|| "" }
 # $env.TRANSIENT_PROMPT_INDICATOR_VI_NORMAL = {|| "" }
@@ -103,16 +105,19 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # obligatory homebrew path entries
-$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
-$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/opt/postgresql@12/bin')
-$env.PATH = ($env.PATH | split row (char esep) | append '~/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin' | prepend '~/.cargo/bin' | prepend '/opt/homebrew/opt/postgresql@12/bin' | append '~/bin' )
+#$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/opt/postgresql@12/bin')
+# $env.PATH = ($env.PATH | split row (char esep) | append '~/bin')
 
 # other important environmental variables
 $env.EDITOR = hx
 $env.HOMEBREW_INSTALL_BADGE = "☕☕☕"
 $env.FZF_DEFAULT_COMMAND = "fd --type f --strip-cwd-prefix --hidden --follow --exclude .git"
 $env.FZF_DEFAULT_OPTS = "--reverse --border=double --info=inline --padding=1 --height=12 --prompt=: --pointer=— "
-$env.FZF_DEFAULT_OPTS = "--color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
+# THEME: Catppuccin Macchiato
+#$env.FZF_DEFAULT_OPTS = "--color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
+# THEME: Catpuccin Latte
+$env.FZF_DEFAULT_OPTS = "--color=bg+:#ccd0da,bg:#eff1f5,spinner:#dc8a78,hl:#d20f39 --color=fg:#4c4f69,header:#d20f39,info:#8839ef,pointer:#dc8a78 --color=marker:#dc8a78,fg+:#4c4f69,prompt:#8839ef,hl+:#d20f39"
 
 # use starship
 mkdir ~/.cache/starship

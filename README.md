@@ -3,9 +3,17 @@
 
 Initialized 2023-04-29 after losing my `.zshrc` file with no backup.
 
-Adjusted over time as I live and learn.
+Adjusted over time as I live and learn and laugh and love.
 
-# 2024-23-2024
+# 2024-12-02
+- reflecting on a better way to switch light/dark modes
+- increasingly catppuccinizing my nushell experience
+- trying out wezterm for those sweet, sweet ligatures
+    - --> 
+    - != 
+    - <==
+
+# 2024-23-02
 - Coming to terms with using Windows
 
 # 2024-01-18

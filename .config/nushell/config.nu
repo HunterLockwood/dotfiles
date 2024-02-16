@@ -2,6 +2,8 @@
 # Instantiated from version 0.88.1 #
 # My customizations mostly up here.#
 ####################################
+# Adjusted defaults for catppuccin #
+####################################
 
 # muscle memory aliases, inherited from other distros
 alias l = ls
@@ -21,126 +23,158 @@ alias open = ^open
 use ~/.config/nushell/completions *
 
 ####################################
-# this is all from the original config file, with some slight modifications that are mostly overwritten by starship at the end
-let dark_theme = {
-    # color for nushell primitives
-    separator: white
-    leading_trailing_space_bg: { attr: n } # no fg, no bg, attr none effectively turns this off
-    header: green_bold
-    empty: blue
-    bool: light_cyan
-    int: white
-    filesize: cyan
-    duration: white
-    date: purple
-    range: white
-    float: white
-    string: white
-    nothing: white
-    binary: white
-    cell-path: white
-    row_index: green_bold
-    record: white
-    list: white
-    block: white
-    hints: dark_gray
-    search_result: {bg: red fg: white}
-    shape_and: purple_bold
-    shape_binary: purple_bold
-    shape_block: blue_bold
-    shape_bool: light_cyan
-    shape_closure: green_bold
-    shape_custom: green
-    shape_datetime: cyan_bold
-    shape_directory: cyan
-    shape_external: cyan
-    shape_externalarg: green_bold
-    shape_external_resolved: light_yellow_bold
-    shape_filepath: cyan
-    shape_flag: blue_bold
-    shape_float: purple_bold
-    shape_garbage: { fg: white bg: red attr: b}
-    shape_globpattern: cyan_bold
-    shape_int: purple_bold
-    shape_internalcall: cyan_bold
-    shape_keyword: cyan_bold
-    shape_list: cyan_bold
-    shape_literal: blue
-    shape_match_pattern: green
-    shape_matching_brackets: { attr: u }
-    shape_nothing: light_cyan
-    shape_operator: yellow
-    shape_or: purple_bold
-    shape_pipe: purple_bold
-    shape_range: yellow_bold
-    shape_record: cyan_bold
-    shape_redirection: purple_bold
-    shape_signature: green_bold
-    shape_string: green
-    shape_string_interpolation: cyan_bold
-    shape_table: blue_bold
-    shape_variable: purple
-    shape_vardecl: purple
+# following yanked from https://raw.githubusercontent.com/nullishamy/derivation-station/master/users/amy/apps/tools/nu/config.nu
+let catppuccin = {
+  latte: {
+    rosewater: "#dc8a78"
+    flamingo: "#dd7878"
+    pink: "#ea76cb"
+    mauve: "#8839ef"
+    red: "#d20f39"
+    maroon: "#e64553"
+    peach: "#fe640b"
+    yellow: "#df8e1d"
+    green: "#40a02b"
+    teal: "#179299"
+    sky: "#04a5e5"
+    sapphire: "#209fb5"
+    blue: "#1e66f5"
+    lavender: "#7287fd"
+    text: "#4c4f69"
+    subtext1: "#5c5f77"
+    subtext0: "#6c6f85"
+    overlay2: "#7c7f93"
+    overlay1: "#8c8fa1"
+    overlay0: "#9ca0b0"
+    surface2: "#acb0be"
+    surface1: "#bcc0cc"
+    surface0: "#ccd0da"
+    crust: "#dce0e8"
+    mantle: "#e6e9ef"
+    base: "#eff1f5"
+  }
+  frappe: {
+    rosewater: "#f2d5cf"
+    flamingo: "#eebebe"
+    pink: "#f4b8e4"
+    mauve: "#ca9ee6"
+    red: "#e78284"
+    maroon: "#ea999c"
+    peach: "#ef9f76"
+    yellow: "#e5c890"
+    green: "#a6d189"
+    teal: "#81c8be"
+    sky: "#99d1db"
+    sapphire: "#85c1dc"
+    blue: "#8caaee"
+    lavender: "#babbf1"
+    text: "#c6d0f5"
+    subtext1: "#b5bfe2"
+    subtext0: "#a5adce"
+    overlay2: "#949cbb"
+    overlay1: "#838ba7"
+    overlay0: "#737994"
+    surface2: "#626880"
+    surface1: "#51576d"
+    surface0: "#414559"
+    base: "#303446"
+    mantle: "#292c3c"
+    crust: "#232634"
+  }
+  macchiato: {
+    rosewater: "#f4dbd6"
+    flamingo: "#f0c6c6"
+    pink: "#f5bde6"
+    mauve: "#c6a0f6"
+    red: "#ed8796"
+    maroon: "#ee99a0"
+    peach: "#f5a97f"
+    yellow: "#eed49f"
+    green: "#a6da95"
+    teal: "#8bd5ca"
+    sky: "#91d7e3"
+    sapphire: "#7dc4e4"
+    blue: "#8aadf4"
+    lavender: "#b7bdf8"
+    text: "#cad3f5"
+    subtext1: "#b8c0e0"
+    subtext0: "#a5adcb"
+    overlay2: "#939ab7"
+    overlay1: "#8087a2"
+    overlay0: "#6e738d"
+    surface2: "#5b6078"
+    surface1: "#494d64"
+    surface0: "#363a4f"
+    base: "#24273a"
+    mantle: "#1e2030"
+    crust: "#181926"
+  }
+  mocha: {
+    rosewater: "#f5e0dc"
+    flamingo: "#f2cdcd"
+    pink: "#f5c2e7"
+    mauve: "#cba6f7"
+    red: "#f38ba8"
+    maroon: "#eba0ac"
+    peach: "#fab387"
+    yellow: "#f9e2af"
+    green: "#a6e3a1"
+    teal: "#94e2d5"
+    sky: "#89dceb"
+    sapphire: "#74c7ec"
+    blue: "#89b4fa"
+    lavender: "#b4befe"
+    text: "#cdd6f4"
+    subtext1: "#bac2de"
+    subtext0: "#a6adc8"
+    overlay2: "#9399b2"
+    overlay1: "#7f849c"
+    overlay0: "#6c7086"
+    surface2: "#585b70"
+    surface1: "#45475a"
+    surface0: "#313244"
+    base: "#1e1e2e"
+    mantle: "#181825"
+    crust: "#11111b"
+  }
 }
 
-let light_theme = {
-    separator: dark_gray
-    leading_trailing_space_bg: { attr: n } 
-    header: green_bold
-    empty: blue
-    bool: dark_cyan
-    int: dark_gray
-    filesize: cyan_bold
-    duration: dark_gray
-    date: purple
-    range: dark_gray
-    float: dark_gray
-    string: dark_gray
-    nothing: dark_gray
-    binary: dark_gray
-    cell-path: dark_gray
-    row_index: green_bold
-    record: dark_gray
-    list: dark_gray
-    block: dark_gray
-    hints: dark_gray
-    search_result: {fg: white bg: red}
-    shape_and: purple_bold
-    shape_binary: purple_bold
-    shape_block: blue_bold
-    shape_bool: light_cyan
-    shape_closure: green_bold
-    shape_custom: green
-    shape_datetime: cyan_bold
-    shape_directory: cyan
-    shape_external: cyan
-    shape_externalarg: green_bold
-    shape_external_resolved: light_purple_bold
-    shape_filepath: cyan
-    shape_flag: blue_bold
-    shape_float: purple_bold
-    shape_garbage: { fg: white bg: red attr: b}
-    shape_globpattern: cyan_bold
-    shape_int: purple_bold
-    shape_internalcall: cyan_bold
-    shape_keyword: cyan_bold
-    shape_list: cyan_bold
-    shape_literal: blue
-    shape_match_pattern: green
-    shape_matching_brackets: { attr: u }
-    shape_nothing: light_cyan
-    shape_operator: yellow
-    shape_or: purple_bold
-    shape_pipe: purple_bold
-    shape_range: yellow_bold
-    shape_record: cyan_bold
-    shape_redirection: purple_bold
-    shape_signature: green_bold
-    shape_string: green
-    shape_string_interpolation: cyan_bold
-    shape_table: blue_bold
-    shape_variable: purple
-    shape_vardecl: purple
+let stheme = $catppuccin.latte
+let theme = {
+  separator: $stheme.overlay0
+  leading_trailing_space_bg: $stheme.overlay0
+  header: $stheme.green
+  date: $stheme.mauve
+  filesize: $stheme.blue
+  row_index: $stheme.pink
+  bool: $stheme.peach
+  int: $stheme.peach
+  duration: $stheme.peach
+  range: $stheme.peach
+  float: $stheme.peach
+  string: $stheme.green
+  nothing: $stheme.peach
+  binary: $stheme.peach
+  cellpath: $stheme.peach
+  hints: $stheme.subtext0 #defaults to dark_gray
+
+  shape_garbage: { fg: $stheme.crust bg: $stheme.red attr: b }
+  shape_bool: $stheme.blue
+  shape_int: { fg: $stheme.mauve attr: b}
+  shape_float: { fg: $stheme.mauve attr: b}
+  shape_range: { fg: $stheme.yellow attr: b}
+  shape_internalcall: { fg: $stheme.blue attr: b}
+  shape_external: { fg: $stheme.blue attr: b}
+  shape_externalarg: $stheme.text 
+  shape_literal: $stheme.blue
+  shape_operator: $stheme.yellow
+  shape_signature: { fg: $stheme.green attr: b}
+  shape_string: $stheme.green
+  shape_filepath: $stheme.yellow
+  shape_globpattern: { fg: $stheme.blue attr: b}
+  shape_variable: $stheme.text
+  shape_flag: { fg: $stheme.blue attr: b}
+  shape_custom: {attr: b}
 }
 
 # External completer example
@@ -153,7 +187,7 @@ $env.config = {
     show_banner: false 
 
     ls: {
-        use_ls_colors: true 
+        use_ls_colors: true
         clickable_links: true 
     }
 
@@ -162,7 +196,8 @@ $env.config = {
     }
 
     table: {
-        mode: rounded # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
+        mode: rounded # 
+            # options include: basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
         index_mode: auto
         show_empty: true 
         padding: { left: 1, right: 1 } 
@@ -172,7 +207,7 @@ $env.config = {
             truncating_suffix: "..." 
         }
         header_on_separator: false 
-        abbreviated_row_count: 128
+        abbreviated_row_count: 4224
     }
 
     error_style: "fancy" 
@@ -186,22 +221,39 @@ $env.config = {
     }
 
     explore: {
-        status_bar_background: {fg: "#1D1F21", bg: "#C4C9C6"},
-        command_bar_text: {fg: "#C4C9C6"},
-        highlight: {fg: "black", bg: "yellow"},
+        status_bar_background: {fg: $stheme.base, bg: $stheme.crust},
+        command_bar_text: {fg: $stheme.subtext0},
+        highlight: {fg: $stheme.overlay0, bg: $stheme.yellow},
         status: {
-            error: {fg: "white", bg: "red"},
+            error: {fg: $stheme.overlay0, bg: $stheme.red},
             warn: {}
             info: {}
         },
         table: {
-            split_line: {fg: "#404040"},
-            selected_cell: {bg: light_blue},
+            split_line: {fg: $stheme.subtext0},
+            selected_cell: {bg: $stheme.surface2},
             selected_row: {},
             selected_column: {},
         },
     }
-
+# default:   
+#    explore: {
+#        status_bar_background: {fg: "#1D1F21", bg: "#C4C9C6"},
+#        command_bar_text: {fg: "#C4C9C6"},
+#        highlight: {fg: "black", bg: "yellow"},
+#        status: {
+#            error: {fg: "white", bg: "red"},
+#            warn: {}
+#            info: {}
+#        },
+#        table: {
+#            split_line: {fg: "#404040"},
+#            selected_cell: {bg: light_blue},
+#            selected_row: {},
+#            selected_column: {},
+#        },
+#    }
+#
     history: {
         max_size: 100_000 
         sync_on_enter: true 
@@ -232,7 +284,7 @@ $env.config = {
         vi_normal: block # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (underscore is the default)
     }
 
-    color_config: $dark_theme # if you want a more interesting theme, you can replace the empty record with `$dark_theme`, `$light_theme` or another custom record
+    color_config: $theme
     use_grid_icons: true
     footer_mode: "auto" # always, never, number_of_rows, auto
     float_precision: 3 
@@ -243,7 +295,7 @@ $env.config = {
     shell_integration: true 
     render_right_prompt_on_last_line: false 
     use_kitty_protocol: false 
-    highlight_resolved_externals: true 
+    highlight_resolved_externals: true
 
     hooks: {
         pre_prompt: [{ null }] # run before the prompt is shown
@@ -269,9 +321,9 @@ $env.config = {
                 col_padding: 2
             }
             style: {
-                text: green
-                selected_text: green_reverse
-                description_text: yellow
+                text: $stheme.text #default green
+                selected_text: $stheme.overlay2 #default green_reverse
+                description_text: $stheme.teal #default yellow
             }
         }
         {
@@ -283,9 +335,9 @@ $env.config = {
                 page_size: 10
             }
             style: {
-                text: green
-                selected_text: green_reverse
-                description_text: yellow
+                text: $stheme.text
+                selected_text: $stheme.overlay2
+                description_text: $stheme.teal
             }
         }
         {
@@ -301,9 +353,9 @@ $env.config = {
                 description_rows: 10
             }
             style: {
-                text: green
-                selected_text: green_reverse
-                description_text: yellow
+                text: $stheme.text
+                selected_text: $stheme.overlay2
+                description_text: $stheme.teal
             }
         }
     ]

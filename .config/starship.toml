@@ -7,16 +7,16 @@
 # TODO add completions (git, brew...)
 
 "$schema" = 'https://starship.rs/config-schema.json'
-palette = "catppuccin_macchiato"
+palette = "catppuccin_latte"
 
 [c]
 format = '\[[$symbol($version(-$name))]($style)\]'
-symbol = " "
+symbol = "  "
 
 [character]
 success_symbol = '\[[❦](green)\] [❯](sky)'
 error_symbol = '\[[☹](rosewater)\]'
-vimcmd_symbol = '[](teal)'
+vimcmd_symbol = '[  ](teal)'
 
 [cmake]
 format = '\[[$symbol($version)]($style)\]'
@@ -28,34 +28,34 @@ format = '\[[󰾩 $duration]($style)\]'
 format = '\[[$symbol($version)]($style)\]'
 
 [directory]
-read_only = ""
+read_only = " "
 read_only_style = "maroon"
 truncation_length = 4
 truncation_symbol = "…"
 style = "italic mauve"
 
 [directory.substitutions]
-"code-learning" = "󱚦"
-"Desktop" = "󱈹"
-"Documents" = "󰧮"
-"Downloads" = ""
-"experimentation" = ""
-"GitHub" = ""
-"javascript" = ""
-"lab" = ""
-"Movies" = ""
-"Music" = "󰽴"
-"Obsidian Vaults" = "󱪄"
-"Pictures" = ""
-"python" = ""
-"rust" = ""
+"code-learning" = "󱚦 "
+"Desktop" = "󱈹 "
+"Documents" = "󰧮 "
+"Downloads" = " "
+"experimentation" = " "
+"GitHub" = " "
+"javascript" = " "
+"lab" = " "
+"Movies" = " "
+"Music" = "󰽴 "
+"Obsidian Vaults" = "󱪄 "
+"Pictures" = " "
+"python" = " "
+"rust" = " "
 
 [docker_context]
-symbol = " "
+symbol = "  "
 format = '\[[$symbol$context]($style)\]'
 
 [elm]
-symbol = " "
+symbol = "  "
 format = '\[[$symbol($version)]($style)\]'
 
 [git_branch]
@@ -122,20 +122,20 @@ disabled = false
 format = '\[[$symbol]($style)\]'
 
 [os.symbols]
-Alpine = ""
-Arch = ""
-Debian = ""
-FreeBSD = ""
-Linux = ""
-Macos = ""
-MidnightBSD = ""
-NetBSD = ""
-NixOS = ""
-OpenBSD = "󰈺"
-openSUSE = ""
-Raspbian = ""
-Unknown = ""
-Windows = "󰨡"
+Alpine = " "
+Arch = " "
+Debian = " "
+FreeBSD = " "
+Linux = " "
+Macos = " "
+MidnightBSD = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+Raspbian = " "
+Unknown = " "
+Windows = "󰨡 "
 
 [package]
 symbol = "󰏗 "
@@ -162,7 +162,7 @@ symbol = " "
 format = '\[[$symbol($version)]($style)\]'
 
 [rust]
-symbol = ""
+symbol = " "
 format = '\[[$symbol($version)]($style)\]'
 
 [scala]
